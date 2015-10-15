@@ -1,9 +1,10 @@
 body {
 	border-bottom: 3px solid black;
 	background: #eeeeee;
+	font-family: 'Times New Roman', Times, serif;
 }
 
-.name {
+.wrapper {
 	width: 512px;
 	background: #fff;
 	box-shadow: 0 0 0 2px #D3D3D3;
@@ -13,9 +14,7 @@ body {
 
 h1{
    text-align: center;
-   font-family: serif;
-   font-size: 24px;
-   font-weight: bold;
+   font-size: 24px;  
 }
 
 img{
@@ -30,26 +29,19 @@ img{
 	text-align: center;
 }
 
-figcaption {
-	padding: 20px;
-	border-bottom: 1px solid black;
-	text-align: left;
-	font-family: serif;
-    font-size: 20px;
-    font-weight: normal;
-}
-
-.name div {
-    text-align: left;
-    font-family: serif;
-    font-size: 20px;
-    font-weight: normal;
+.wrapper div {
     padding-left: 55px;
     border-bottom: 1px solid black;
 }
 
 li{
-	padding: 10px;
+	padding: 5px;
+}
+
+p, li, figcaption{
+	text-align: left;
+	font-size: 20px;
+    font-weight: 400;
 }
 
 div.in_addition{
