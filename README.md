@@ -1,2 +1,2 @@
-# beast22.github.io-
+# beast22.github.io
 Eugene
