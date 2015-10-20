@@ -1,3 +1,5 @@
+
+
 body {
 	border-bottom: 3px solid black;
 	background: #eeeeee;
@@ -19,9 +21,10 @@ h1{
 
 img{
 	width: 135px;
-	border-radius:10px; 
+	border-radius: 10px; 
 	-webkit-border-radius:10px; 
 	-moz-border-radius:10px;
+	-o-border-radius:10px;
 }
 
 .foto{
@@ -37,33 +40,18 @@ li{
 	padding: 5px;
 }
 
-p, li, figcaption{
+p, ul, figcaption{
 	text-align: left;
 	font-size: 20px;
     font-weight: 400;
-    margin-left: 55px;
+    padding-left: 55px;
 }
 
  .contact div{
 	border-bottom: none;
 }
-
- .contact div{
- 	margin-bottom: 20px;
- 	margin-top: 20px;
- }
-
- .contact p{
- 	margin-bottom: 0;
- 	margin-top: 0;
- }
  
 div.in_addition{
 	border-bottom: none;
-	margin-top: 20px;
 }
 
-.in_addition p{
-	margin-bottom: 0;
- 	margin-top: 0;
-}
