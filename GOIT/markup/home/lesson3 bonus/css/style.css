@@ -1,0 +1,93 @@
+body{
+	background: #ccc;
+}
+.wrapper{
+  background: #000 url("../img/bg.jpg") no-repeat scroll center center;
+    color: #e6e6e6;
+    margin: 0 auto;
+    padding: 60px 70px;
+    position: relative;
+    width: 873px;
+ }
+
+header{
+	background: url("../img/palm_tree.png") no-repeat 149px 1px;;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.logo{
+	float: left;
+    padding-bottom: 17px;
+    padding-left: 10px;
+    padding-top: 70px;
+}
+
+.logo p{
+    font-family: Tahoma,Arial,sans-serif;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+ }
+
+.contacts{
+    float: right;
+    padding-right: 35px;
+    padding-top: 78px;
+}
+
+.contacts p{
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 10px;
+	line-height: 12px;
+}
+
+.contacts p:first-child{
+	font-size: 12px;
+	line-height: 18px;
+}
+
+section{
+	color: #e6e6e6;
+	padding-bottom: 100px;
+}
+
+.row{
+	font-size: 0px;
+}
+
+.row figure{
+	display: inline-block;
+}
+
+.row figure img{
+	border: 3px solid #7c7c7c;
+	border-radius: 1%;
+}
+
+.row figure{
+	padding: 0 12px 65px 12px;
+}
+
+.row figcaption{
+	font-size: 15px;
+	text-align: center;
+	font-family: Tahoma, Arial, sans-serif;
+	line-height: 20px;
+}
+
+footer{
+ padding-top: 1px;
+}
+
+footer p{
+    font-size: 10px;
+	text-align: center;
+	font-family: Tahoma, Arial, sans-serif;
+}
