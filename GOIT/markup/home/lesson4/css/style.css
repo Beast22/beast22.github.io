@@ -1,0 +1,290 @@
+body{
+	background: url("../img/bg.jpg") no-repeat top center;
+}
+
+.wrapper{
+	background: #fff;
+	width: 1000px;
+	margin: 0 auto;
+	padding-top: 34px;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.logo{
+	float: left;
+}
+
+.logo img{
+    position: relative;
+    top: 15px;
+    left: 25px;
+}
+
+.logo p{
+	font-family: Tahoma,Arial,sans-serif;
+	font-size: 12px;
+	color:#128aa7;
+	position: relative;
+	left: 100px;
+	bottom: 55px;
+}
+
+.contacts{
+    bottom: 30px;
+    float: right;
+    position: relative;
+    right: 35px;
+}
+
+.contacts p{
+    font-family:Tahoma,Arial,sans-serif;
+	font-size: 12px;
+	color:#128aa7;
+	line-height: 20px;
+}
+
+.contacts p:first-child{
+    font-weight: 600;
+    font-family:Tahoma,Arial,sans-serif;
+	font-size: 12px;
+	color:#128aa7;
+	line-height: 20px;
+}
+
+.countries_list{
+ 	float: right;
+    position: relative;
+    top: 102px;	
+    left: 100px;
+}
+
+.countries li{
+	float: left;
+	padding-right: 15px;
+}
+
+.countries li a{
+	font-family:Tahoma,Arial,sans-serif;
+	display: block;
+	font-size: 10px;
+	color:#128aa7;
+	text-align: center;
+	line-height: 125px;
+	width: 44px;
+	height: 91px;
+}
+
+.countries .India a{
+	background: url("../img/countries_iconset.png") -2px 13px no-repeat;
+}
+
+.countries .Nepal a{
+	background: url("../img/countries_iconset.png") -74px 13px no-repeat;
+}
+
+
+.countries .Tibet a{
+	background: url("../img/countries_iconset.png") -145px 13px no-repeat;
+}
+
+
+.countries .Butan a{
+	background: url("../img/countries_iconset.png") -218px 13px no-repeat;
+}
+
+
+.countries .Sri-Lanka a{
+	background: url("../img/countries_iconset.png") -290px 13px no-repeat;
+}
+
+
+.countries .Maldives a{
+	background: url("../img/countries_iconset.png") -363px 13px no-repeat;
+}
+
+.countries li a:hover{
+	text-decoration: none;
+}
+
+.beach{
+	clear: both;
+}
+
+.beach img{
+	border-top: 1px solid #128aa7;
+	border-bottom: 1px solid #128aa7;
+	display: block;
+}
+
+/*---------MENU----------*/
+
+.nav{
+	float: left;
+	width: 100%;
+	background:#343434;
+	height: 28px;
+	border-bottom: 1px solid #000;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, .5);
+}
+
+.nav li{
+	float:left;
+	width: 140px;
+	position:relative;
+	font-family:Tahoma,Arial,sans-serif;
+	font-size: 14px;
+}
+
+.nav li a{
+	display:block;
+	padding:5px;
+	color:#fff;
+	text-decoration:none;
+	text-align: center;
+}
+
+li.travel a[title]::after {
+    background: url("../img/menu_arrow.png") no-repeat;
+    content: "";
+    display: block;
+    height: 28px;
+    left: 120px;
+    position: absolute;
+    top: 10px;
+    width: 35px;
+}
+
+li.service a[title]::after {
+    background: url("../img/menu_arrow.png") no-repeat;
+    content: "";
+    display: block;
+    height: 28px;
+    left: 99px;
+    position: absolute;
+    top: 10px;
+    width: 35px;
+}
+
+li.partner a[title]::after {
+    background: url("../img/menu_arrow.png") no-repeat;
+    content: "";
+    display: block;
+    height: 28px;
+    left: 113px;
+    position: absolute;
+    top: 10px;
+    width: 35px;
+}
+
+/*---------DROPDOWN MENU----------*/
+
+.nav ul{
+    position: absolute;
+     left: -9999px;
+	opacity: 0;
+	-webkit-transition:0.25s linear opacity;
+	-moz-transition:0.25s linear opacity;
+	-transition:0.25s linear opacity;
+}
+
+.nav li:hover ul{
+	opacity:1;
+	background:#343434;
+}
+
+.nav li:hover .travel_list{
+	left: 24px;
+}
+
+.nav li:hover .service_list{
+	left: 42px;
+}
+
+.nav li:hover .partner_list{
+	left: 30px;
+}
+
+.nav ul li{
+	padding-top: 8px;
+}
+
+.nav ul a{
+	display:block;
+	text-align: left;
+}	
+
+/*---------COLUMNS----------*/
+
+.basic_col{
+	width: 1000px;
+	overflow: hidden;
+	clear: both;
+}
+
+.leftColumn{
+	background: #edeef0;
+	border-right: 1px solid #c7cacf; 
+	width: 209px;
+	float: left;
+	padding-bottom: 20000px;
+	margin-bottom: -20000px;
+}
+
+.centerColumn{
+	background: #fff;
+	width: 58%;
+	float: left;
+	padding-bottom: 20000px;
+	margin-bottom: -20000px;
+}
+
+.rightColumn{
+	background: #edeef0;
+	border-left: 1px solid #c7cacf;
+	width: 209px;
+	float: left;
+	padding-bottom: 20000px;
+	margin-bottom: -20000px;
+}
+
+section h2{
+	font-family: Tahoma,Arial,sans-serif;
+	font-size: 18px;
+	color:#424c43;
+	text-align: center;
+	padding-top: 15px;
+}
+
+section p{
+	font-family: Tahoma,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: center;
+	color: #424c43;
+}
+
+section p:last-child{
+	padding-bottom: 15px;
+}
+
+
+/*---------FOOTER----------*/
+
+footer p{
+	font-family: Tahoma,Arial,sans-serif;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	padding: 9px 0;
+}
+
+
