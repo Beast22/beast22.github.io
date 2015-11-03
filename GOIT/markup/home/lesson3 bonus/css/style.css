@@ -51,7 +51,7 @@ header{
 	line-height: 18px;
 }
 
-section{
+.content{
 	color: #e6e6e6;
 	padding-bottom: 100px;
 }
@@ -70,16 +70,16 @@ section{
 	-webkit-border-radius: 1px;
 	-moz-border-radius: 1px;
 	-o-border-radius: 1px;
-	transition: all 0.7s ease-in-out;
+	transition: all 0.5s ease-in-out;
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
 }
 
 .row figure img:hover{
-	-webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-     filter: blur(5px);
+	-webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+     filter: blur(2px);
 }
 
 .row figure{

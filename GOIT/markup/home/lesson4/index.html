@@ -7,11 +7,10 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="wrapper">
-		<header>
+	<div class="wrapper clearfix">
+		<header class="header">
 			<div class="logo">
-				<a href="#"><img src="img/logo.png" alt="лого"></a>
-                <p>Путешествия по Азии</p>
+				<a href="#"><span>Путешествия по Азии</span></a>
 			</div>
 			<div class="contacts_countries clearfix">
 				<div class="contacts">
@@ -31,12 +30,14 @@
 					</ul>
 				</div>
 			</div>
-			<div class="beach"><img src="img/beach.jpg" alt="пляж"></div>
-				<ul class="nav">
+		</header>
+		<div class="beach"><img src="img/beach.jpg" alt="пляж"></div>
+			<nav class="navigation">
+				<ul class="menu">
 					<li><a href="#" title="Вернуться на главную страницу">Главная</a></li>
 					<li class="travel"><a href="#" title="Доступные туры">Путешествие</a>
 						<ul class="travel_list">
-							<li><a href="#">Путешествие	1</a></li>
+							<li><a href="#"><nobr>Путешествие 1</nobr></a></li>  
 							<li><a href="#">Путешествие	2</a></li>
 							<li><a href="#">Путешествие	3</a></li>
 							<li><a href="#">Путешествие	4</a></li>
@@ -45,7 +46,7 @@
 					</li>
 					<li class="service"><a href="#" title="Спектр Услуг">Услуги</a>
 						<ul class="service_list">
-							<li><a href="#">Услуга	1</a></li>
+							<li><a href="#"><nobr>Услуга 1</nobr></a></li>
 							<li><a href="#">Услуга	2</a></li>
 							<li><a href="#">Услуга	3</a></li>
 							<li><a href="#">Услуга	4</a></li>
@@ -54,7 +55,7 @@
 					</li>
 					<li class="partner"><a href="#" title="Партнерам">Партнерам</a>
 						<ul class="partner_list">
-							<li><a href="#">Партнер	1</a></li>
+							<li><a href="#"><nobr>Партнер 1</nobr></a></li>
 							<li><a href="#">Партнер	2</a></li>
 							<li><a href="#">Партнер	3</a></li>
 							<li><a href="#">Партнер	4</a></li>
@@ -65,8 +66,9 @@
 					<li><a href="#" title="Информация о компании">О нас</a></li>
 					<li><a href="#" title="Как с нами связаться">Контакты</a></li>
 				</ul>
-		</header>
-		<section>
+			</nav>
+		
+		<section class="content">
 			<div class="basic_col clearfix">
 				<div class="leftColumn">
 				<h2>Информация</h2>
@@ -107,7 +109,7 @@
 			</div>
 		</section>
 	</div>	<!-- End of wrapper -->
-		<footer>
+		<footer class="copyright">
 		<p>
 		Copyright(C) asia-holidays.com. 2010
 		</p>

@@ -1,12 +1,15 @@
 body{
-	background: url("../img/bg.jpg") no-repeat top center;
+	background: #0c739f url("../img/bg.jpg") repeat-x;
 }
 
 .wrapper{
 	background: #fff;
 	width: 1000px;
 	margin: 0 auto;
-	padding-top: 34px;
+	box-shadow: 1px 1px 5px 1px rgba(0,0,0,1);
+	-webkit-box-shadow: 1px 1px 5px 1px rgba(0,0,0,1);
+	-moz-box-shadow: 1px 1px 5px 1px rgba(0,0,0,1);
+	 padding-top: 24px;
 }
 
 .clearfix:after {
@@ -19,28 +22,33 @@ body{
 
 .logo{
 	float: left;
+	padding: 25px 0 0 37px;
 }
 
-.logo img{
+.logo a{
+	display: block;
+	width: 283px;
+	height: 164px;
+	background: url("../img/logo.png") no-repeat;
+    text-decoration: none;
     position: relative;
-    top: 15px;
-    left: 25px;
 }
 
-.logo p{
+.logo span{
 	font-family: Tahoma,Arial,sans-serif;
 	font-size: 12px;
 	color:#128aa7;
-	position: relative;
-	left: 100px;
-	bottom: 55px;
+	position: absolute;
+	padding: 100px 0 0 72px;
+}
+
+.contacts_countries{
+	float: right;
 }
 
 .contacts{
-    bottom: 30px;
-    float: right;
-    position: relative;
-    right: 35px;
+	float: right;
+    padding: 0 43px 0;
 }
 
 .contacts p{
@@ -59,10 +67,9 @@ body{
 }
 
 .countries_list{
- 	float: right;
-    position: relative;
-    top: 102px;	
-    left: 100px;
+   padding: 98px 33px 0 0;
+   position: relative;
+   top: 12px;
 }
 
 .countries li{
@@ -77,36 +84,36 @@ body{
 	color:#128aa7;
 	text-align: center;
 	line-height: 125px;
-	width: 44px;
+    width: 54px;
 	height: 91px;
 }
 
 .countries .India a{
-	background: url("../img/countries_iconset.png") -2px 13px no-repeat;
+	background: url("../img/countries_iconset.png") 2px 13px no-repeat;
 }
 
 .countries .Nepal a{
-	background: url("../img/countries_iconset.png") -74px 13px no-repeat;
+	background: url("../img/countries_iconset.png") -69px 13px no-repeat;
 }
 
 
 .countries .Tibet a{
-	background: url("../img/countries_iconset.png") -145px 13px no-repeat;
+	background: url("../img/countries_iconset.png") -142px 13px no-repeat;
 }
 
 
 .countries .Butan a{
-	background: url("../img/countries_iconset.png") -218px 13px no-repeat;
+	background: url("../img/countries_iconset.png") -214px 13px no-repeat;
 }
 
 
 .countries .Sri-Lanka a{
-	background: url("../img/countries_iconset.png") -290px 13px no-repeat;
+	background: url("../img/countries_iconset.png") -286px 13px no-repeat;
 }
 
 
 .countries .Maldives a{
-	background: url("../img/countries_iconset.png") -363px 13px no-repeat;
+	background: url("../img/countries_iconset.png") -359px 13px no-repeat;
 }
 
 .countries li a:hover{
@@ -125,7 +132,7 @@ body{
 
 /*---------MENU----------*/
 
-.nav{
+.menu{
 	float: left;
 	width: 100%;
 	background:#343434;
@@ -136,15 +143,15 @@ body{
     -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, .5);
 }
 
-.nav li{
+nav>.menu>li{
 	float:left;
-	width: 140px;
+	padding: 0 32px 0 33px;
 	position:relative;
 	font-family:Tahoma,Arial,sans-serif;
 	font-size: 14px;
 }
 
-.nav li a{
+.menu li a{
 	display:block;
 	padding:5px;
 	color:#fff;
@@ -157,7 +164,7 @@ li.travel a[title]::after {
     content: "";
     display: block;
     height: 28px;
-    left: 120px;
+    left: 132px;
     position: absolute;
     top: 10px;
     width: 35px;
@@ -168,7 +175,7 @@ li.service a[title]::after {
     content: "";
     display: block;
     height: 28px;
-    left: 99px;
+    left: 89px;
     position: absolute;
     top: 10px;
     width: 35px;
@@ -179,7 +186,7 @@ li.partner a[title]::after {
     content: "";
     display: block;
     height: 28px;
-    left: 113px;
+    left: 118px;
     position: absolute;
     top: 10px;
     width: 35px;
@@ -187,7 +194,7 @@ li.partner a[title]::after {
 
 /*---------DROPDOWN MENU----------*/
 
-.nav ul{
+.menu ul{
     position: absolute;
      left: -9999px;
 	opacity: 0;
@@ -196,28 +203,29 @@ li.partner a[title]::after {
 	-transition:0.25s linear opacity;
 }
 
-.nav li:hover ul{
+.menu li:hover ul{
 	opacity:1;
 	background:#343434;
 }
 
-.nav li:hover .travel_list{
-	left: 24px;
+.menu li:hover .travel_list{
+	left: 35px;
 }
 
-.nav li:hover .service_list{
-	left: 42px;
+.menu li:hover .service_list{
+	left: 35px;
 }
 
-.nav li:hover .partner_list{
-	left: 30px;
+.menu li:hover .partner_list{
+	left: 35px;
 }
 
-.nav ul li{
+.menu ul li{
 	padding-top: 8px;
+	padding-right: 40px;
 }
 
-.nav ul a{
+.menu ul a{
 	display:block;
 	text-align: left;
 }	
@@ -235,13 +243,15 @@ li.partner a[title]::after {
 	border-right: 1px solid #c7cacf; 
 	width: 209px;
 	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
 	padding-bottom: 20000px;
 	margin-bottom: -20000px;
 }
 
 .centerColumn{
 	background: #fff;
-	width: 58%;
+	width: 52%;
 	float: left;
 	padding-bottom: 20000px;
 	margin-bottom: -20000px;
@@ -250,8 +260,10 @@ li.partner a[title]::after {
 .rightColumn{
 	background: #edeef0;
 	border-left: 1px solid #c7cacf;
-	width: 209px;
+	width: 208px;
 	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
 	padding-bottom: 20000px;
 	margin-bottom: -20000px;
 }
@@ -262,6 +274,8 @@ section h2{
 	color:#424c43;
 	text-align: center;
 	padding-top: 15px;
+	padding-bottom: 10px;
+	font-weight: bold;
 }
 
 section p{
