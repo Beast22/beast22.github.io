@@ -68,8 +68,6 @@ body{
 
 .countries_list{
    padding: 98px 33px 0 0;
-   position: relative;
-   top: 12px;
 }
 
 .countries li{
@@ -133,7 +131,6 @@ body{
 /*---------MENU----------*/
 
 .menu{
-	float: left;
 	width: 100%;
 	background:#343434;
 	height: 28px;
@@ -141,14 +138,13 @@ body{
     box-shadow: 0 2px 3px rgba(0, 0, 0, .5);
     -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .5);
     -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, .5);
+    margin-top: 1px;
 }
 
 nav>.menu>li{
-	float:left;
-	padding: 0 32px 0 33px;
+	display: inline-block;
+	padding: 0 21px 0 39px;
 	position:relative;
-	font-family:Tahoma,Arial,sans-serif;
-	font-size: 14px;
 }
 
 .menu li a{
@@ -157,6 +153,8 @@ nav>.menu>li{
 	color:#fff;
 	text-decoration:none;
 	text-align: center;
+	font-family:Tahoma,Arial,sans-serif;
+	font-size: 14px;
 }
 
 li.travel a[title]::after {
@@ -209,15 +207,15 @@ li.partner a[title]::after {
 }
 
 .menu li:hover .travel_list{
-	left: 35px;
+	left: 40px;
 }
 
 .menu li:hover .service_list{
-	left: 35px;
+	left: 40px;
 }
 
 .menu li:hover .partner_list{
-	left: 35px;
+	left: 40px;
 }
 
 .menu ul li{
