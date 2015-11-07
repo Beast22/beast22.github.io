@@ -139,11 +139,14 @@ body{
     -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .5);
     -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, .5);
     margin-top: 1px;
+    font-size: 0px;
+  	line-height: 0px;
+  	vertical-align: 0px;
 }
 
 nav>.menu>li{
 	display: inline-block;
-	padding: 0 21px 0 39px;
+	padding: 8px 21px 0 39px;
 	position:relative;
 }
 
@@ -154,6 +157,7 @@ nav>.menu>li{
 	text-decoration:none;
 	font-family:Tahoma,Arial,sans-serif;
 	font-size: 14px;
+	height: 100%;
 }
 
 li.travel a[title]::after {
@@ -165,7 +169,7 @@ li.travel a[title]::after {
     position: absolute;
     top: 10px;
     width: 35px;
-}
+ }
 
 li.service a[title]::after {
     background: url("../img/menu_arrow.png") no-repeat;
@@ -203,6 +207,7 @@ li.partner a[title]::after {
 .menu li:hover ul{
 	opacity:1;
 	background:#343434;
+	margin: 4px;
 }
 
 .menu li:hover .travel_list{
@@ -220,6 +225,10 @@ li.partner a[title]::after {
 .menu ul li{
 	padding-top: 8px;
 	padding-right: 40px;
+}
+
+.menu ul li:last-child{
+	padding-bottom: 8px;
 }
 
 .menu ul a{
