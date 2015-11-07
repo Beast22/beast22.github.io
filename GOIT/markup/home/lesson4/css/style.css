@@ -149,10 +149,9 @@ nav>.menu>li{
 
 .menu li a{
 	display:block;
-	padding:5px;
+	padding: 5px;
 	color:#fff;
 	text-decoration:none;
-	text-align: center;
 	font-family:Tahoma,Arial,sans-serif;
 	font-size: 14px;
 }
@@ -173,7 +172,7 @@ li.service a[title]::after {
     content: "";
     display: block;
     height: 28px;
-    left: 89px;
+    left: 92px;
     position: absolute;
     top: 10px;
     width: 35px;
@@ -231,9 +230,7 @@ li.partner a[title]::after {
 /*---------COLUMNS----------*/
 
 .basic_col{
-	width: 1000px;
 	overflow: hidden;
-	clear: both;
 }
 
 .leftColumn{
@@ -249,7 +246,7 @@ li.partner a[title]::after {
 
 .centerColumn{
 	background: #fff;
-	width: 52%;
+	width: 520px;
 	float: left;
 	padding-bottom: 20000px;
 	margin-bottom: -20000px;
