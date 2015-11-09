@@ -146,18 +146,17 @@ body{
 
 nav>.menu>li{
 	display: inline-block;
-	padding: 8px 21px 0 39px;
 	position:relative;
+	padding: 0 22px 0 50px;
 }
 
 .menu li a{
 	display:block;
-	padding: 5px;
 	color:#fff;
 	text-decoration:none;
 	font-family:Tahoma,Arial,sans-serif;
 	font-size: 14px;
-	height: 100%;
+	line-height: 28px;
 }
 
 li.travel a[title]::after {
@@ -165,9 +164,9 @@ li.travel a[title]::after {
     content: "";
     display: block;
     height: 28px;
-    left: 132px;
+    left: 142px;
     position: absolute;
-    top: 10px;
+    top: 12px;
     width: 35px;
  }
 
@@ -176,9 +175,9 @@ li.service a[title]::after {
     content: "";
     display: block;
     height: 28px;
-    left: 92px;
+    left: 102px;
     position: absolute;
-    top: 10px;
+    top: 12px;
     width: 35px;
 }
 
@@ -187,9 +186,9 @@ li.partner a[title]::after {
     content: "";
     display: block;
     height: 28px;
-    left: 118px;
+    left: 128px;
     position: absolute;
-    top: 10px;
+    top: 12px;
     width: 35px;
 }
 
@@ -207,24 +206,26 @@ li.partner a[title]::after {
 .menu li:hover ul{
 	opacity:1;
 	background:#343434;
-	margin: 4px;
 }
 
 .menu li:hover .travel_list{
-	left: 40px;
+	left: 45px;
+	top: 29px;
 }
 
 .menu li:hover .service_list{
-	left: 40px;
+	left: 45px;
+	top: 29px;
 }
 
 .menu li:hover .partner_list{
-	left: 40px;
+	left: 45px;
+	top: 29px;
 }
 
 .menu ul li{
-	padding-top: 8px;
 	padding-right: 40px;
+	padding-left: 5px;
 }
 
 .menu ul li:last-child{

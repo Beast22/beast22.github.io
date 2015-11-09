@@ -8,15 +8,16 @@
 </head>
 <body>
 <div class="wrapper">
-	<nav class="navigation clearfix">
-		<ul class="menu">
+	<nav class="navigation">
+	<div class="container clearfix">
+		<ul class="menu clearfix">
 			<li><a href="#">Meu YouBike</a></li>
-			<li><a href="#">Vender</a></li>
+			<li class="active"><a href="#">Vender</a></li>
 			<li><a href="#">Forum</a></li>
 			<li><a href="#">Contato</a></li>
 			<li><a href="#">Ajuda</a></li>
 		</ul>
-		<div class="goods_sign_up">
+		<div class="goods_sign_up clearfix">
 			<a class="goods" href="#">Minhas Ofertas</a>
 			<p class="sign_up">
 			<span>Ola!</span>
@@ -26,10 +27,10 @@
 			</p>
 		</div>
 	</nav>
-<div class="bg">
-	<h1>Cadastre-se</h1>
-	<form action="#" name="sign_up">
-		<button class="fb" type="submit"></button>
+	</div>
+	<form action="#" class="registration">
+		<h1>Cadastre-se</h1>
+		<button class="fb" type="submit">Log In <span>with</span> Facebook</button>
 		<fieldset>
 			<legend>OU</legend>
 			<input type="text" name="first_name" placeholder="First Name">
@@ -40,9 +41,8 @@
 		<checkbox id="send"></checkbox>
 		<input type="submit" value="Create my Account">
 		</fieldset>
+		<p>By clicking the button above, you agree to the Terms of Service</p>
 	</form>
-	<p>By clicking the button above, you agree to the Terms of Service</p>
-</div><!-- End of bg -->
 </div>
 </body>
 </html>
