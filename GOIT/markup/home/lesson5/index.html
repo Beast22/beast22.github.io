@@ -30,18 +30,21 @@
 	</div>
 	<form action="#" class="registration">
 		<h1>Cadastre-se</h1>
-		<button class="fb" type="submit">Log In <span>with</span> Facebook</button>
-		<fieldset>
-			<legend>OU</legend>
-			<input type="text" name="first_name" placeholder="First Name">
-			<input type="text" name="last_name" placeholder="Last Name">
-			<input type="text" name="email" placeholder="Email Address">
-			<input type="password" name="choose_password" placeholder="Choose Password">
-			<input type="password" name="password_confirm" placeholder="Password Confirm">
-		<checkbox id="send"></checkbox>
-		<input type="submit" value="Create my Account">
+		<div class="fb">
+		<a href="#"><span class="f"></span>Log In <span>with</span> Facebook</a>
+		</div>
+		<fieldset class="fieldset">
+			<legend class="legend">&nbsp OU &nbsp</legend>
+			<input type="text" id="active" name="first_name" required placeholder="First Name">
+			<input type="text" name="last_name" required placeholder="Last Name">
+			<input type="text" name="email" required placeholder="Email Address">
+			<input type="password" name="choose_password" required placeholder="Choose Password">
+			<input type="password" name="password_confirm" required placeholder="Password Confirm">
+			<input type="checkbox" id="test">
+			<label for="test" class="test"> Send me Youbike updates and tips</label>
+			<input type="submit" id="send" value="Create my Account">
 		</fieldset>
-		<p>By clicking the button above, you agree to the Terms of Service</p>
+		<p class="conditions">By clicking the button above, you agree to the Terms of Service <br> Xiew our Privacy Policy</p>
 	</form>
 </div>
 </body>

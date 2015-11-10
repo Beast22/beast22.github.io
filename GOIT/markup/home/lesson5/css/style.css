@@ -9,6 +9,7 @@
     font-style: normal;
 }
 
+
 .wrapper{
     width: 1215px;
     height: 1064px;
@@ -145,10 +146,10 @@
     top:50%;
     left:50%;
     width: 560px;
-    height: 515px;
+    height: 630px;
     background: rgba(0,0,0, .63);
     margin-left: -280px;
-    margin-top: -212px;
+    margin-top: -262px;
     font-family: 'Helvetica Neue', Tahoma, Arial, sans-serif;
 }
 
@@ -161,24 +162,157 @@
 }
 
 .fb{
-    background: url("../img/fb.png");
+   /* background: url("../img/fb.png");*/
     width: 276px;
     height: 35px;
-    border: none;
- /*   color: #fff;
     background: -webkit-linear-gradient(top, rgba(62,86,148,.7) 0%, rgba(49,67,117,.7) 100%);
     background: -moz-linear-gradient(top, rgba(62,86,148,.7) 0%, rgba(49,67,117,.7) 100%);
     background: -o-linear-gradient(top, rgba(62,86,148,.7) 0%, rgba(49,67,117,.7) 100%);
     background: -ms-linear-gradient(top, rgba(62,86,148,.7) 0%, rgba(49,67,117,.7) 100%);
     background: linear-gradient(to bottom, rgba(62,86,148,.7) 0%, rgba(49,67,117,.7) 100%);
+    border-top: 1px solid #758ab9;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    position: relative;
+     margin: 35px auto 30px auto;
+}
+
+.fb a {
+    color: #fff;
+    display: block;
     font-size: 14px;
     font-weight: bold;
-    border-top: 1px solid #758ab9;
-    border: none;
-    border-radius: 5px;
-    margin: 5px;*/
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
 }
 
 .fb span{
     font-weight: normal;
 }
+
+.fb a::after{
+    background: url("../img/mark.png") no-repeat scroll 0 0;
+    content: "";
+    display: block;
+    bottom: 12px;
+    left: 242px;
+    position: absolute;
+    width: 8px;
+    height: 11px;
+  }
+
+  .fb a::before{
+    background: url("../img/f-separator.png") no-repeat scroll 0 0;
+    content: "";
+    display: block;
+    bottom: 0px;
+    left: 15px;
+    position: absolute;
+    width: 24px;
+    height: 35px;
+  }
+
+  .registration legend {
+    text-align: center;
+    color: #999999;
+    padding-bottom: 30px;
+  }
+
+  .legend::before{
+    content: "";
+    display: inline-block;
+    width: 122px;
+    border-top: 1px solid #666666;
+    border-bottom: 1px solid #000;
+    position: relative;
+    bottom: 4px;
+  }
+
+   .legend::after{
+    content: "";
+    display: inline-block;
+    width: 122px;
+    border-top: 1px solid #666666;
+    border-bottom: 1px solid #000;
+    position: relative;
+    bottom: 4px;
+}
+
+  input{
+    display: block;
+    margin: 0 auto;
+}
+
+
+.registration input[type="text"],
+[type="password"]{
+    color: #ccc;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    background: #100f0f;
+    border: none;
+    border-bottom: 1px solid #484948;
+    width: 275px;
+    height: 35px;
+
+}
+
+input[type="text"]:focus, 
+input[type="password"]:focus,
+input[type="text"]#active{
+    background: #1b5288;
+    border-bottom: 1px solid #689bcc;
+    -webkit-box-shadow: 0 0 9px rgba(47,123,197,.77), 0 1px #4b4b4b, inset 0 2px 5px rgba(29,26,22,.2), inset 0 0 2px rgba(0,0,0,.1);
+    -moz-box-shadow: 0 0 9px rgba(47,123,197,.77), 0 1px #4b4b4b, inset 0 2px 5px rgba(29,26,22,.2), inset 0 0 2px rgba(0,0,0,.1);
+    box-shadow: 0 0 9px rgba(47,123,197,.77), 0 1px #4b4b4b, inset 0 2px 5px rgba(29,26,22,.2), inset 0 0 2px rgba(0,0,0,.1);
+}
+
+input[type="checkbox"]{
+    display:inline; 
+    left: 68px;
+    position: relative;
+}
+
+.registration label{
+    color: #ccc;
+    font-size: 14px;
+    padding-left: 139px;
+}
+
+input[type="checkbox"]{
+    position: relative;
+    left: 135px;
+    top:2px;
+}
+
+.registration #send{
+    margin-top: 15px;
+    width: 155px;
+    height: 37px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border: none;
+    border: 1px solid  #6bb8e7;
+    background: rgba(81,176,220,1);
+    background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.3) 20%, rgba(255,255,255,.3));
+    background-image: -moz-linear-gradient(bottom, rgba(0,0,0,.3) 20%, rgba(255,255,255,.3));
+    background-image: -o-linear-gradient(bottom, rgba(0,0,0,.3) 20%, rgba(255,255,255,.3));
+    background-image: -ms-linear-gradient(bottom, rgba(0,0,0,.3) 20%, rgba(255,255,255,.3));
+    background-image: linear-gradient(to top, rgba(0,0,0,.3) 20%, rgba(255,255,255,.3));
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+}
+
+.registration p{
+    padding-top: 15px;   
+    text-align: center;
+    color: #cccccc;
+    font-size: 11px;
+    line-height: 14px;
+}
+
+
