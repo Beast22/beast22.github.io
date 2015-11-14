@@ -9,14 +9,20 @@
     font-style: normal;
 }
 
+html,body{
+    height: 100%;
+}
 
 .wrapper{
-    width: 1215px;
-    height: 1064px;
+ /*   width: 1215px;
+    height: 1064px;*/
     font-family: 'Helvetica Neue', Tahoma, Arial, sans-serif;
     margin: 0 auto;
     background: url("../img/bg.jpg") no-repeat center center;
     position: relative;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
 }
 
 .clearfix:after {
@@ -36,7 +42,7 @@
 }
 
 .container{
-    width: 58%;
+    width: 39%;
     float: right;
     padding-right: 20px;
 }
@@ -46,7 +52,7 @@
     font-size: 0px;
     line-height: 0px;
     vertical-align: 0px;
-    width: 800px;
+    width: 350px;
 }
 
 .menu li{
@@ -73,13 +79,13 @@
     background: #4eabda;
 }
 
-.menu li:last-child::after {
+.menu::after {
     background: rgba(0, 0, 0, 0) url("../img/separator.png") no-repeat scroll 0 0;
     content: "";
     display: block;
     height: 36px;
     width: 1px;
-    left: 71px;
+    left: 344px;
     position: relative;
     bottom: 34px;
 }
@@ -132,24 +138,34 @@
 }
 
 .sign_up a{
-    border-bottom: 2px solid #9ac2e4;
+    text-decoration: underline;
 }
 
 .sign_up a:hover{
-    border-bottom: none;
+    text-decoration: none;
 }
 
 /*---------FORM----------*/
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 
 .registration{
     position: absolute;
     top:50%;
     left:50%;
     width: 560px;
-    height: 630px;
     background: rgba(0,0,0, .63);
     margin-left: -280px;
-    margin-top: -262px;
+    margin-top: -312px;
     font-family: 'Helvetica Neue', Tahoma, Arial, sans-serif;
 }
 
@@ -218,6 +234,7 @@
     text-align: center;
     color: #999999;
     padding-bottom: 30px;
+    width: 100%;
   }
 
   .legend::before{
@@ -308,11 +325,14 @@ input[type="checkbox"]{
 }
 
 .registration p{
-    padding-top: 15px;   
+    padding-top: 15px;
+    padding-bottom: 15px;   
     text-align: center;
     color: #cccccc;
     font-size: 11px;
     line-height: 14px;
 }
+
+
 
 
