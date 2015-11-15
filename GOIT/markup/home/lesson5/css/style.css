@@ -13,6 +13,9 @@ html,body{
     height: 100%;
 }
 
+body{
+    min-height: 760px;
+}
 .wrapper{
  /*   width: 1215px;
     height: 1064px;*/
@@ -41,18 +44,18 @@ html,body{
     background: url("../img/menu_bg.png") repeat-x;
 }
 
-.container{
+/*.container{
     width: 39%;
     float: right;
     padding-right: 20px;
 }
-
+*/
 
 .menu{
     font-size: 0px;
     line-height: 0px;
-    vertical-align: 0px;
-    width: 350px;
+    vertical-align: middle;
+    /*width: 350px;*/
 }
 
 .menu li{
@@ -90,15 +93,19 @@ html,body{
     bottom: 34px;
 }
 
-.goods_sign_up{
+/*.goods_sign_up{
     float: right;
-    position: relative;
+  /position: relative;
     bottom: 72px;
-}
+}*/
 
 .goods,.sign_up{
-    float: left;
+ /*   float: left;*/
     padding: 10px;
+}
+
+.goods,.sign_up,.menu{
+    float: right;
 }
 
 .sign_up, .sign_up a{
@@ -108,12 +115,16 @@ html,body{
 }
 
 .goods{
+    margin-left: 40px;
+}
+
+.goods a{
     color: #60b5ed;
     text-decoration: none;
     font-size: 14px;
 }
 
-.goods:hover{
+.goods a:hover{
     color: #fff;
 }
 
@@ -124,8 +135,8 @@ html,body{
     position: absolute;
     width: 21px;
     height: 23px;
-    right: 297px;
-    bottom: 6px;
+    right: 313px;
+    top: 5px;
 }
 
 .sign_up {
@@ -135,6 +146,7 @@ html,body{
     background: -o-linear-gradient(top, rgba(81,177,220,.7) 20%, rgba(46,122,196,.7));
     background: -ms-linear-gradient(top, rgba(81,177,0,.7) 20%, rgba(46,122,196,.7));
     background: linear-gradient(to bottom, rgba(81,177,220,.7) 20%, rgba(46,122,196,.7));
+    margin-right: 20px;
 }
 
 .sign_up a{
@@ -159,13 +171,13 @@ html,body{
 }
 
 .registration{
-    position: absolute;
+/*    position: absolute;
     top:50%;
-    left:50%;
+    left:50%;*/
     width: 560px;
     background: rgba(0,0,0, .63);
-    margin-left: -280px;
-    margin-top: -312px;
+  /*  margin-left: -280px;
+    margin-top: -312px;*/
     font-family: 'Helvetica Neue', Tahoma, Arial, sans-serif;
 }
 

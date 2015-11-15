@@ -267,3 +267,97 @@
 	padding: 0 4px 0 0px;
 	letter-spacing: 1.3px;
 }
+
+/*--------SEARCH PANELS --------*/
+
+.search{
+	margin-top: 10px;
+}
+
+.auto,.tires,.wheels{
+	float: left;
+	height: 134px;
+	-webkit-border-radius: 14px/18px 18px 17px 17px;
+	-moz-border-radius: 14px/18px 18px 17px 17px;
+	border-radius: 14px/18px 18px 17px 17px;
+	background-color: #fff;
+	-webkit-box-shadow: 3px 4px 5px rgba(150,150,150,.75);
+	-moz-box-shadow: 3px 4px 5px rgba(150,150,150,.75);
+	box-shadow: 3px 4px 5px rgba(150,150,150,.75);
+	border: solid 1px #9c9c9d;
+	position: relative;
+}
+
+.auto{
+	width: 413px;
+	margin-right: 14px;
+	position: relative;
+}
+
+.tires{
+	width: 193px;
+	margin-right: 9px;
+}
+
+.wheels{
+	width: 265px;
+	bottom: 5px;
+}
+
+.search form{
+	float: left;
+}
+
+
+/*--------1 panel - AUTO--------*/
+
+ .auto_form fieldset:first-child{
+	float: left;
+	width: 178px;
+}
+
+ .auto_form fieldset:nth-child(2){
+	float: left;
+	width: 178px;
+}
+
+.auto_title{
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	line-height: 11px;
+	font-weight: bold;
+	color: #154467;
+	text-align: center;
+
+}
+
+.auto label{
+	display: inline-block;
+	float: left;
+	font-size: 10px;
+	font-family: Arial, sans-serif;
+	color: #000;
+}
+
+#submit_car{
+	border: none;
+	background: none;
+	font-family: Arial, sans-serif;
+	font-style: italic;
+	font-size: 14px;
+	color: #154467;
+	text-decoration: underline;
+	position: absolute;
+	cursor: pointer;
+}
+
+#submit_car:hover{
+	text-decoration: none;
+}
+
+.auto legend{
+	font-family: Arial, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #154467;
+}
