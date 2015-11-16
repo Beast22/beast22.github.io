@@ -41,7 +41,7 @@ body{
 .navigation{
     width: 100%;
     height: 36px;
-    background: url("../img/menu_bg.png") repeat-x;
+    background: #074c89;
 }
 
 /*.container{
@@ -55,6 +55,7 @@ body{
     font-size: 0px;
     line-height: 0px;
     vertical-align: middle;
+    position: relative;
     /*width: 350px;*/
 }
 
@@ -88,9 +89,10 @@ body{
     display: block;
     height: 36px;
     width: 1px;
-    left: 344px;
-    position: relative;
-    bottom: 34px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+  
 }
 
 /*.goods_sign_up{
@@ -116,6 +118,7 @@ body{
 
 .goods{
     margin-left: 40px;
+    position: relative;
 }
 
 .goods a{
@@ -135,7 +138,7 @@ body{
     position: absolute;
     width: 21px;
     height: 23px;
-    right: 313px;
+    left: -15px;
     top: 5px;
 }
 
