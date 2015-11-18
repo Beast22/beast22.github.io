@@ -87,23 +87,11 @@ body{
     background: rgba(0, 0, 0, 0) url("../img/separator.png") no-repeat scroll 0 0;
     content: "";
     display: block;
-    height: 36px;
+    height: 28px;
     width: 1px;
     position: absolute;
-    top: 1px;
-    right: 1px;
-  
-}
-
-/*.goods_sign_up{
-    float: right;
-  /position: relative;
-    bottom: 72px;
-}*/
-
-.goods,.sign_up{
- /*   float: left;*/
-    padding: 10px;
+    top: 4px;
+    right: -10px;
 }
 
 .goods,.sign_up,.menu{
@@ -119,12 +107,14 @@ body{
 .goods{
     margin-left: 40px;
     position: relative;
+    padding: 8px 10px 10px 10px;
 }
 
 .goods a{
     color: #60b5ed;
     text-decoration: none;
     font-size: 14px;
+    line-height: 14px;
 }
 
 .goods a:hover{
@@ -138,8 +128,8 @@ body{
     position: absolute;
     width: 21px;
     height: 23px;
-    left: -15px;
-    top: 5px;
+    left: -17px;
+    top: 3px;
 }
 
 .sign_up {
@@ -150,6 +140,7 @@ body{
     background: -ms-linear-gradient(top, rgba(81,177,0,.7) 20%, rgba(46,122,196,.7));
     background: linear-gradient(to bottom, rgba(81,177,220,.7) 20%, rgba(46,122,196,.7));
     margin-right: 20px;
+    padding: 10px;
 }
 
 .sign_up a{
