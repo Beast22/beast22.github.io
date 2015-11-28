@@ -451,10 +451,11 @@ top: 4px;
 	border: solid 1px #79878d;
 	background: #fff;
 	padding: 0px 6px 0px 24px;
-    line-height: 24px;
+    line-height: 28px;
     position: relative;
     margin-bottom: 14px;
     margin-left: -4px;
+    margin-top: 2px;
 }
 
 .left_column h2:before{
@@ -464,8 +465,8 @@ top: 4px;
 	background: url("../img/catalog.png");
 	width: 22px;
 	height: 21px;
-	left: 2px;
-    top: 1px;
+	left: 1px;
+    top: 3px;
 }
 
 .h3_title{
@@ -473,7 +474,7 @@ top: 4px;
 	font-family: "Lucida Sans Unicode", "Trebuchet MS", sans-serif;
 	line-height: 28px;
 	color: #114165;
-	height: 26px;
+	height: 25px;
 	width: 120px;
 	-webkit-border-radius: 11px/13px;
 	-moz-border-radius: 11px/13px;
@@ -481,8 +482,9 @@ top: 4px;
 	background: #fff;
 	border: solid 1px #79878d;
 	position: relative;
-	padding: 0 0px 0px 27px;
+	padding: 0px 0px 1px 27px;
     margin-left: -3px;
+    margin-top: -1px;
     
 }
 
@@ -545,6 +547,7 @@ top: 4px;
     line-height: 24px;
     position: relative;
     margin-bottom: 14px;
+    margin-right: 4px;
 }
 
 .right_column h2:before{
@@ -626,7 +629,7 @@ top: 4px;
 }
 
 .row{
-	padding: 20px 0 15px 0;
+	padding: 15px 0 14px 0;
 }
 
 
@@ -649,6 +652,19 @@ top: 4px;
 	-moz-border-radius: 7px;
 	border-radius: 7px;
 	border: solid 1px #a4aeb1;
+	padding: 0 0 1px 0;
+}
+
+.center .row:nth-child(1) .img_link{
+	padding: 0 0px 4px 0;
+}
+
+.center .row:nth-child(2) .img_link{
+	padding: 0 0px 4px 0;
+}
+
+.center .row:nth-child(3) .img_link{
+	padding: 0 0px 8px 0;
 }
 
 .center .img_link:hover{
@@ -681,7 +697,9 @@ top: 4px;
 	font-family: Arial, sans-serif;
 	font-weight: bold;
 	font-style: italic;
-	/*line-height: 10px;*/
+	position: relative;
+    top: 4px;
+    left: 10px;
 }
 
 /*-------------PARTNERS logos------------------*/
