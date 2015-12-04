@@ -24,7 +24,7 @@ for (var i = 0; i < names.length; i++) {
 }
 
 if(flag){
-	alert(User + 'вы успешно вошли');
+	alert(User + ' вы успешно вошли');
 }else{
 	alert('Такого пользователя не существует');
 }
