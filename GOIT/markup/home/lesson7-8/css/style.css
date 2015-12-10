@@ -1378,18 +1378,18 @@ input[type=radio] {
 }
 
  .c_slider {
-    width: 43%;
+    width: 46%;
     position: relative;
  }    
 
-.c_slider:after {
-	content: "";
-	position: absolute;	
-	width: 1.5em;
-	height: 1.375em;
-	background: url("../img/slider-arrow.png") no-repeat;
-	bottom: -2em;
-    right: 1em;
+.c_slider:before {
+    content: '';
+    position: absolute;
+    width: 33px;
+    height: 22px;
+    background: url("../img/slider-arrow.png") no-repeat;
+    bottom: -1.4em;
+    right: 1.6em;
 }
 
 .c_slider__title a, .c_slider__subtitle a {
@@ -1415,13 +1415,31 @@ input[type=radio] {
 
 .slider__controls {
     bottom: -2.813em;
-    left: 44%;
+    left: 40%;
 }
 
 .updates {
-    width: 25em;
+    width: 26.2em;
+}   
 
-}    
+.updates__comments {
+    width: 24em;
+} 
+
+.updates__others2{
+	display: none;
+}
+
+.updates__others{
+	display: inline;
+	font-family: "League Gothic Regular", Arial, sans-serif;
+    font-size: 1.125em;
+    line-height: 1.5em;
+    color: #454545;
+    text-decoration: none;
+    padding: 0.6em 0 0 0;
+    float: right;
+}
 
 
 
