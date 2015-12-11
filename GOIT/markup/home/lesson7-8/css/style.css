@@ -1334,8 +1334,9 @@ input[type=radio] {
 }
 
 .slider .slider__controls {
-    bottom: -6.8em;
-    left: 76%;
+	position: absolute;
+    bottom: -16.5em;
+    right: 20%;
 }
 
  /*-------------INFOBLOCK--------------*/  
@@ -1371,6 +1372,10 @@ input[type=radio] {
 
  /*-------------CONTENT--------------*/ 
 
+ .slider_wrapper{
+ 	position: relative;
+ }
+
  .content_container {
     min-width: 59em;
     margin: 0 auto;
@@ -1404,6 +1409,11 @@ input[type=radio] {
 
 .c_slider__title {
     padding: 2.125em 0 0 2.688em;
+}
+
+.c_slider__userpic {
+    left: -1em;
+    top: 1em;
 }
 
 .c_slider__article {
