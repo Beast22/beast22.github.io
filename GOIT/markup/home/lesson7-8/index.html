@@ -2,10 +2,20 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Pingbuller</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+ <!--[if IE 9]>
+ <link href="css/ie9.css" rel="stylesheet" type="text/css" /><![endif]-->
+ <!--[if lt IE 9]>
+    <script type="text/javascript" src="lib/html5shiv.js"></script>
+    <script type="text/javascript" src="lib/html5shiv-printshiv.js"></script>
+ 	<script type="text/javascript"  src="lib/rem.min.js"></script>
+    <link href="css/ie8.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
 </head>
 <body>
 	<div class="wrapper">
@@ -114,8 +124,9 @@
 					<a href="#" class="updates__others2">MORE BLOG POSTS</a>
 				</section>
 		</div> <!-- End of container -->
-		</main>
-				<section class="logos">
+		</main> 
+			<section class="logos">
+				<div class="logos_container">
 					<ul class="logos__list clearfix">
 						<li class="logos__elem"><a href="#" class="logos__link1"></a></li>
 						<li class="logos__elem"><a href="#" class="logos__link2"></a></li>
@@ -124,11 +135,13 @@
 						<li class="logos__elem"><a href="#" class="logos__link5"></a></li>
 						<li class="logos__elem"><a href="#" class="logos__link6"></a></li>
 					</ul>
-				</section>
+				</div>
+			</section>
 				<section class="pre_footer clearfix">
+					<div class="pre_footer__container clearfix">
 					<div class="pre_footer__block">
 					<h3 class="pre_footer__head new_cat1">NEWS CATEGORIES</h3>
-					<h2 class="heading_bottom">Pingbull<span>er</span></h2>
+					<h2 class="heading_bottom 2head">Pingbull<span>er</span></h2>
 					<p class="pre_footer__copyright">Copyright 2013, Pingbull AS</p>
 					<article class="pre_footer_text__copyright">
 						Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis 
@@ -136,21 +149,23 @@
 					</div>
 					<div class="pre_footer__block">
 					<h3 class="pre_footer__head new_cat2">NEWS CATEGORIES</h3>
-					<h3 class="pre_footer__comments">RECENT COMMENTS</h3>
+					<h3 class="pre_footer__comments 2head">RECENT COMMENTS</h3>
 					<article class="pre_footer_text__comments">
 						Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis 
 					</article>
 					</div>
 					<div class="pre_footer__block">
 					<h3 class="pre_footer__head new_cat3">NEWS CATEGORIES</h3>
-					<h3 class="pre_footer__catecories">RECENT COMMENTS</h3>
+					<!-- <h3 class="pre_footer__catecories 2head">RECENT COMMENTS</h3> -->
 					<article class="pre_footer_text__catecories">
 						Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis 
 					</article>
 					</div>
+					</div><!-- end of container -->
 				</section>
 		
 		<footer class="footer">
+			<div class="footer_container">
 			<nav class="menu">
 				<ul class="menu__footer_menu">
 					<li class="f_menu__item"><a href="#">HOME</a></li>
@@ -161,7 +176,8 @@
 					<li class="f_menu__item"><a href="#">DOLOR SIT AMET</a></li>
 				</ul>
 			</nav>	
-			<p class="footer_author_link">Designed by <span>Pingbull AS</span></p>
+			<p class="footer_author_link">Designed by <a href="#">Pingbull AS</a></p>
+			</div>
 		</footer>
 	</div>
 </body>
