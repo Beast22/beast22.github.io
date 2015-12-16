@@ -532,7 +532,7 @@ input[type=radio] {
 
 .updates__subtitle a{
 	font-family: "OpenSans-Extrabold", Arial, sans-serif;
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 24px;
 	text-decoration: none;
 	color:#454545;
