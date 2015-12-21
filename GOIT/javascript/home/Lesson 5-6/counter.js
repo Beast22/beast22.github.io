@@ -19,10 +19,13 @@ stop.addEventListener('click', pauseTimer );
 
 var reset = document.querySelector("#clear");
 reset.classList.add('ink-button', 'red');
+reset.addEventListener('click', resetTimer );
 var intervalId;
 
 var counter_title = document.querySelector('.counter_title');
 counter_title.classList.add('fw-500', 'ink-flex', 'push-center');
+
+var diffDate;
 
 
 
@@ -33,33 +36,37 @@ counter_title.classList.add('fw-500', 'ink-flex', 'push-center');
 function displayTime(){
   var date2 = new Date();
 	var timeDiff = Math.abs(date2.getTime() - date1.getTime());
-	var diffDate = new Date(timeDiff);  
+	diffDate = new Date(timeDiff);  
 	
   display.innerHTML = diffDate.toUTCString().replace(/.*([0-9][0-9]:[0-9][0-9]:[0-9][0-9]).*/,'$1') + ":" + diffDate.getMilliseconds();
 
-  var time = diffDate.toUTCString().replace(/.*([0-9][0-9]:[0-9][0-9]:[0-9][0-9]).*/,'$1') + ":" + diffDate.getMilliseconds();
+ var time = diffDate.toUTCString().replace(/.*([0-9][0-9]:[0-9][0-9]:[0-9][0-9]).*/,'$1') + ":" + diffDate.getMilliseconds();
 }
 
-reset.addEventListener("click", function(){
-display.innerHTML = '00:00:00:000';
-clearInterval(intervalId);
-start.style.display = "inline-block";
-stop.style.display = "none";
+function resetTimer(){
+	start.innerHTML = 'Start';
+	display.innerHTML = '00:00:00:000';
+	clearInterval(intervalId);
+	start.style.display = "inline-block";
+	stop.style.display = "inline-block";
+	start.removeEventListener("click", pauseTimer);
+	start.addEventListener("click", startTimer);
 	var diffDate = new Date(0); 
 	seconds = 0;
 	minutes = 0;
 	hours = 0;
-});
+}
 
 function startTimer(){
 	intervalId = setInterval(displayTime, 4);
 	start.addEventListener("click", pauseTimer);
 }
 
+
 function pauseTimer(){
 	start.innerHTML = 'Continue';
 	clearInterval(intervalId);
-	displayTime.innerHTML = diffDate.toUTCString().replace(/.*([0-9][0-9]:[0-9][0-9]:[0-9][0-9]).*/,'$1') + ":" + diffDate.getMilliseconds(); 
+	display.innerHTML = diffDate.toUTCString().replace(/.*([0-9][0-9]:[0-9][0-9]:[0-9][0-9]).*/,'$1') + ":" + diffDate.getMilliseconds(); 
 	start.removeEventListener("click", pauseTimer);
 	start.addEventListener("click", startTimer);
 }
