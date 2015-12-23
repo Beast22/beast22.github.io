@@ -1107,14 +1107,21 @@ input[type=radio] {
     background: linear-gradient(to top, #322539 0%, #745083 100%);
     border-top: 1px solid #36283c;
     border-bottom: 1px solid #12191f;
-    /* height: 195px; */
-    padding: 2.063em 0 4.413em 2.750em;
+    padding: 2.063em 0 4.413em 0;
     width: 100%;
 }
 
 .infoblock_container {
     min-width: 45.5em;
 }
+
+@media only screen and (max-width: 959px) and (min-width: 768px){
+
+.infoblock_container {
+    position: relative;
+    margin-left: 1.5em;
+}
+			}
 
 .infoblock__elem{
 	display: inline-block;
@@ -1191,6 +1198,7 @@ input[type=radio] {
     padding: 8.188em 0 0 2em;
     float: right;
     border-bottom: none;
+    margin-right: 1em;
 }
 
 .updates__others2 {
