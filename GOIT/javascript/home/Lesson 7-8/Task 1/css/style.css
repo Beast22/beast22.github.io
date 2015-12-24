@@ -50,12 +50,12 @@
     display: inline-flex;
 }
 
-#cont_tab{
+.cont{
 	padding-top: 1em;
 	display: none;
 }
 
-#cont_tab.cont_active{
+.cont_active{
 	padding-top: 1em;
 	display: block;
 }
