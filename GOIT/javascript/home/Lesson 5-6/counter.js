@@ -28,11 +28,6 @@ counter_title.classList.add('fw-500', 'ink-flex', 'push-center');
 var diffDate;
 
 
-
-
-
-
-
 function displayTime(){
   var date2 = new Date();
 	var timeDiff = Math.abs(date2.getTime() - date1.getTime());
@@ -59,7 +54,8 @@ function resetTimer(){
 
 function startTimer(){
 	intervalId = setInterval(displayTime, 4);
-	start.addEventListener("click", pauseTimer);
+	stop.addEventListener("click", pauseTimer);
+	start.removeEventListener("click", startTimer);
 }
 
 
