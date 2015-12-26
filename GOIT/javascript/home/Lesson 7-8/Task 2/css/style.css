@@ -20,8 +20,9 @@ fieldset div{
 }
 
 form{
-/*	display: flex;
-	align-items: center;*/
+display: inline-flex;
+flex-direction:row;
+
 }
 
 label{
@@ -61,7 +62,29 @@ background:linear-gradient(#FFFFFF, #E6E6E6) #F5F5F5 repeat-x;
 }
 
 .show_help:hover {
-  -webkit-transform: translateY(-5px);
-  -ms-transform: translateY(-5px);
-  transform: translateY(-5px);
+cursor: pointer;
+}
+
+.tooltip_set{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 230px;
+  padding-left: 10px;
+ /* border: 1px solid black;*/
+}
+
+.tooltip{
+  background: #fff;
+  border: 1px solid #aaaaaa;
+  border-radius: 5px;
+  width: 230px;
+  margin-top: 1.3em;
+  line-height: 2em;
+  text-align: center;
+  display: block;
+  -moz-box-shadow:0 1px 10px #00c6ff;
+  -webkit-box-shadow: 0 1px 10px #00c6ff;
+  box-shadow:0 1px 10px #00c6ff;
+  opacity: 0;
 }
