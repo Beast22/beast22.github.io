@@ -129,6 +129,14 @@ fieldset:nth-child(2){
 	background-position: 0 -17px;
 }
 
+#checked:after {
+	background-position: 0 -17px;
+}
+
+#second_input:checked + #checked:after{
+	background-position: 0 0;
+}
+
 
 
 /*
