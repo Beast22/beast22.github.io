@@ -4,11 +4,18 @@
 
 		var defaults = {
 			quantaty: 4,
-			autoPlay: false,
+			overlayColor: '#fff',
+			reverse: false,
 			autoPlayDelay: 2000 // delay in miliseconds
 		};
 
 		var settings = $.extend(defaults, options);
+
+		var $overlay = $('.fm-carousel-container');
+
+		$overlay.css({
+			'background-color': settings.overlayColor
+			});
 
 		var $leftArrow = $('.fm-carousel-arrow-left');
 		var $rightArrow = $('.fm-carousel-arrow-right'); 
@@ -16,25 +23,31 @@
 		var $leftOffset = 225;
 		var $currentLeftPlace = 0;
 		var $elementsCount = $carousel.find('li').length;
-		var $maximumOffset;
-		var $minimumOffset;
+		var	$maximumOffset = 0;
+		var	$minimumOffset = - (($elementsCount - settings.quantaty) * $leftOffset);
 	
-	
-		  	$leftArrow.click(function() {
-    		$maximumOffset = 0;
-		if ($currentLeftPlace != maximumOffset){
+	    function moveLeft(){
+		if ($currentLeftPlace != $maximumOffset){
 			$currentLeftPlace += 225;
 			$carousel.animate({left : $currentLeftPlace + "px"}, 500);
 			}
-		}); 
+		} 
 
-		 	$rightArrow.click(function() {
-    		$minimumOffset = - (($elementsCount - options.quantaty) * $leftOffset);
-		if ($currentLeftPlace != minimumOffset){
+		$leftArrow.on('click', moveLeft);
+
+		 function moveRight(){	
+		if ($currentLeftPlace != $minimumOffset){
 			$currentLeftPlace -= 225;
 			$carousel.animate({left : $currentLeftPlace + "px"}, 500);
-			}
-		}); 
+		}	else{
+				if(settings.reverse === true;){
+				$currentLeftPlace = $maximumOffset;
+				$carousel.animate({left : $currentLeftPlace + "px"}, 300);
+				}
+		    } 
+		} 
+
+		$rightArrow.on('click', moveRight);
 
 		return this;
 	};

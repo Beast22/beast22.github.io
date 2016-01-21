@@ -4,7 +4,9 @@ $(function(){
 
 		quantaty: 3,
 
-		autoPlay: true
+		overlayColor: '#ccc',
+
+		reverse: true
 	});
 
 });
