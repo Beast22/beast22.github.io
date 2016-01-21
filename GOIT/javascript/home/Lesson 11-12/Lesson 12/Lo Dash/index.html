@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Micro-Templating of John Resig</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js"></script>
+</head>
+<body>
+	<script type="text/html" id="profile">
+		<div class="wrapper">
+		    <div class="name">
+			<h1><%=name%></h1>
+				<figure class="foto">
+				<img src="<%=photo%>" alt="фото">
+				<figcaption></figcaption>
+				</figure>
+				<p><%=who%></p>
+			</div>
+			<div class="hobby">
+				<p><%=hobby%></p>
+				<ul>
+				<% hobby_list.forEach(function(item) {  %>
+				    <li><%-item%></li>
+				<% }); %>
+				</ul>
+			</div>
+			<div class="contact">
+				
+					<div class="tel">
+					<p><%=tel%></p>
+					<p><%=number%></p>
+					</div>
+
+					<div class="vk">
+					<p><%=vk_account%></p>
+					<p><a href="<%=vk_address%>"><%=vk_url%></a></p>
+					</div>
+				
+			</div>
+			<div class="in_addition">
+				<p><%=quot_title%></p>
+				 <p><%=quot%></p>
+			</div>
+		</div>
+	</script>
+	<div id="to_insert"></div>
+	<script src="js/script.js"></script>
+</body>
+</html>

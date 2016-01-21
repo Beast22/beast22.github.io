@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Micro-Templating of John Resig</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/tmpl.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<script type="text/html" id="profile">
+		<div class="wrapper">
+		    <div class="name">
+			<h1><%=name%></h1>
+				<figure class="foto">
+				<img src="<%=photo%>" alt="фото">
+				<figcaption></figcaption>
+				</figure>
+				<p><%=who%></p>
+			</div>
+			<div class="hobby">
+				<p><%=hobby%></p>
+				<ul>
+				<% for ( var i = 0; i < hobby_list.length; i++ ) { %>
+				    <li><%=hobby_list[i]%></li>
+				<% }; %>
+				</ul>
+			</div>
+			<div class="contact">
+				
+					<div class="tel">
+					<p><%=tel%></p>
+					<p><%=number%></p>
+					</div>
+
+					<div class="vk">
+					<p><%=vk_account%></p>
+					<p><a href="<%=vk_address%>"><%=vk_url%></a></p>
+					</div>
+				
+			</div>
+			<div class="in_addition">
+				<p><%=quot_title%></p>
+				 <p><%=quot%></p>
+			</div>
+		</div>
+	</script>
+</body>
+</html>

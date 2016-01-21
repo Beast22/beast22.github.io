@@ -1,0 +1,61 @@
+
+
+body {
+	border-bottom: 3px solid black;
+	background: #eeeeee;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.wrapper {
+	width: 512px;
+	background: #fff;
+	box-shadow: 0 0 0 2px #D3D3D3;
+	margin: 0 auto 45px auto;
+	padding: 50px;	
+}
+
+h1{
+   text-align: center;
+   font-size: 24px;  
+}
+
+img{
+	width: 135px;
+	border-radius: 10px; 
+	-webkit-border-radius:10px; 
+	-moz-border-radius:10px;
+	-o-border-radius:10px;
+}
+
+.foto{
+	display: block;
+	text-align: center;
+}
+
+.wrapper div {
+     border-bottom: 1px solid black;
+}
+
+li{
+	padding: 5px;
+}
+
+p, ul, figcaption{
+	text-align: left;
+	font-size: 20px;
+    font-weight: 400;
+    padding-left: 55px;
+}
+
+ul{
+	margin-left: 20px;
+}
+
+ .contact div{
+	border-bottom: none;
+}
+ 
+div.in_addition{
+	border-bottom: none;
+}
+

@@ -1,3 +1,20 @@
+@font-face {
+	font-family: "Ancient_Runes";
+	src: local("Ancient_Runes"),
+	url("../fonts/Ancient_Runes/Ancient Runes_1_1.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+.fm-carousel-title {
+    font-family: "Ancient_Runes";
+    text-align: center;
+    font-size: 2em;
+    font-weight: 800;
+    letter-spacing: 6px;
+    padding-bottom: 7px;
+}
+
 .fm-carousel-container{
     width: 651px;
     margin: 3em auto;
@@ -28,6 +45,7 @@
 	text-align: center;
 	border-radius: 10px;
 	font-family: sans-serif;
+	font-weight: 700;
 }
 
 .fm-carousel-hider{

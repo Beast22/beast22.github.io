@@ -6,7 +6,11 @@ $(function(){
 
 		overlayColor: '#ccc',
 
-		reverse: true
-	});
+		reverse: true,
 
+		autoPlay: true,
+
+		autoPlayDelay: 3000
+
+	});
 });
