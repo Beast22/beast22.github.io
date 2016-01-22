@@ -27,6 +27,10 @@ counter_title.classList.add('fw-500', 'ink-flex', 'push-center');
 
 var diffDate;
 
+var flag = true;
+
+var reset_push;
+
 
 function displayTime(){
   var date2 = new Date();
@@ -38,6 +42,10 @@ function displayTime(){
  var time = diffDate.toUTCString().replace(/.*([0-9][0-9]:[0-9][0-9]:[0-9][0-9]).*/,'$1') + ":" + diffDate.getMilliseconds();
 }
 
+// function clearCounter(){
+// 	var diffDate = new Date(0); 
+// }
+
 function resetTimer(){
 	start.innerHTML = 'Start';
 	display.innerHTML = '00:00:00:000';
@@ -45,14 +53,23 @@ function resetTimer(){
 	start.style.display = "inline-block";
 	stop.style.display = "inline-block";
 	start.removeEventListener("click", pauseTimer);
-	start.addEventListener("click", startTimer);
+	// start.addEventListener("click", clearCounter);
+	stop.removeEventListener("click", pauseTimer);
+	// location.reload();
 	var diffDate = new Date(0); 
 	seconds = 0;
 	minutes = 0;
 	hours = 0;
+	var flag = true;
 }
 
 function startTimer(){
+	// if(start.innerHTML = 'Start'){
+	// var diffDate = new Date(0);
+	// seconds = 0;
+	// minutes = 0;
+	// hours = 0;	
+	// }
 	intervalId = setInterval(displayTime, 4);
 	stop.addEventListener("click", pauseTimer);
 	start.removeEventListener("click", startTimer);
