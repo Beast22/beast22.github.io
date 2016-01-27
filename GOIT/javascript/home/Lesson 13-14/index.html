@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lesson 3-4</title>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="title">Тест по фронтенду</h1>
+		<form class="form" action="#">
+
+			<script type="text/html" id = "testGenerate">
+				<% for ( var i =0; i<test.length; i++) { %>
+					<div class="quest_item">
+						<h2 class="question"><%=test[i].question%></h2>
+						<h3 class="quest_descr"><%=test[i].quest_descr%></h3>
+						<% for ( var j =0; j<test[i].answer.length; j++) { %>
+						<div class="checkbox col-lg-12">
+						<input type="checkbox" id="check1"><label for="check1" class="answer1">
+							<%=test[i].answer[j]%>
+						</label>
+						</div>
+						<%}; %>
+					</div>
+
+				<%}; %>
+			</script>
+		
+
+		</form>
+		<input type="submit" class="btn btn-info btn-lg center-block bg-info" id="go" value="Проверить мои результаты">
+	</div>
+
+		<!-- Modal window -->
+<!-- 		<div id="modal_form">
+      		<span id="modal_close">X</span> 
+		</div>
+		<div id="overlay"></div> -->
+</body>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/tmpl.js"></script>
+<script src="js/script.js"></script>
+</html>
