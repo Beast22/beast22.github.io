@@ -53,8 +53,6 @@ $(function () {
 
 	 $('.form').append(content); 
 
-	 // console.log(my_test[1].answer);
-
 
 	 function modalWindow(){
 	 // 	var $modal = document.createElement('div');
@@ -65,16 +63,17 @@ $(function () {
 		// $closer.classList.add('modal_close');
 		// $overlay.classList.add('overlay');
 
-		 	var $modal = $('<div id ="modal_form"><h2>Результаты теста:\n</h2></div>');
-			var $closer = $('<span id ="modal_close">X</span>');
-		    var $overlay = $('<div id ="overlay"></div>');
+		 	var modal = document.getElementById('modal_form');
+			var closer = document.getElementById('modal_close');
+		    var overlay = document.getElementById('overlay');
 
-		    $('body').append($modal);
-		    $('#modal_form').append($closer);
-		    $('body').append($overlay);
+		    // $('body').append($modal);
+		    // $($modal).append($closer);
+		    // $('body').append($overlay);
 	 }
 
 			  function showModal(){
+
 			  	$('#overlay').fadeIn(400,
 			  		function(){
 			  			$('#modal_form')
