@@ -53,28 +53,79 @@ $(function () {
 
 	 $('.form').append(content); 
 
-	 // console.log(my_test[1].answer);
 
 
-	 function modalWindow(){
-	 // 	var $modal = document.createElement('div');
-		// var $closer = document.createElement('span');
-		// var $overlay = document.createElement('div');
+	function getAnswers(e){
 
-		// $modal.classList.add('modal_form');
-		// $closer.classList.add('modal_close');
-		// $overlay.classList.add('overlay');
+		 e.preventDefault();
 
-		 	var $modal = $('<div id ="modal_form"><h2>Результаты теста:\n</h2></div>');
-			var $closer = $('<span id ="modal_close">X</span>');
-		    var $overlay = $('<div id ="overlay"></div>');
+		 var yourAnswers = [];
+
+		for (var i = 0; i < my_test.length; i++){
+
+			var checkboxes = $('quest_item' + i + 'input:checkbox');
+
+			var answered = {};
+
+			for (var c = 0; c < checkboxes.length; c++){
+
+			var checked = checkboxes[c].checked;
+
+			var correct = my_test[i].correctAnswer[c+1];
+
+			if (checked !== correct) {
+
+					answered[c] = false;
+
+				} else {
+
+					answered[c] = true;
+				};
+
+			};
+				yourAnswers.push(answered);
+
+
+		 };
+
+	
+
+
+ 	// modal window
+
+	 	function createResults(){
+		 	var $modal = $('<div id="modal_form"><h2>Результаты теста:\n</h2></div>');
+			var $closer = $('<span id="modal_close">X</span>');
+		    var $overlay = $('<div id="overlay"></div>');
 
 		    $('body').append($modal);
 		    $('#modal_form').append($closer);
 		    $('body').append($overlay);
-	 }
 
-			  function showModal(){
+		    for (var i = 0; i < my_test.length; i++){
+
+				var checkboxes = $('quest_item' + i + 'input:checkbox');
+
+				var results = $('#modal_form' + i + 'input:checkbox');
+
+					for (var c = 0; c < questions[i].answer.length; c++) {
+
+						var checked = checkboxes[c].checked;
+
+						if((checked == true)) {
+							if ((yourAnswers[i][k]) == true) {
+								$(results[k]).attr({
+								"disabled": true,
+		    					"checked" : true	
+								}).append("<span> Правильный ответ!</span>");
+							}
+						}
+					};
+
+			};
+
+
+			  function showResults(){
 			  	$('#overlay').fadeIn(400,
 			  		function(){
 			  			$('#modal_form')
@@ -84,7 +135,7 @@ $(function () {
 			  }
 
 
-			  function hideModal(){
+			  function hideResults(){
 			  	$('#modal_form')
 			  		.animate({opacity: 0, top: '45%'}, 200,
 			  		function(){
@@ -93,8 +144,17 @@ $(function () {
 			  		});
 			  };
 
-			  $('#go').on('click', showModal);
-			  $('#modal_close').on('click', hideModal);
-			  $('#overlay').on('click', hideModal);
+			  $('#go').on('click', showResults);
+			  $('#modal_close').on('click', hideResults);
+			  $('#overlay').on('click', hideResults);
+
+		 };
+
+		 createResults();
+	 };
+
+	 $('#go').on('click', getAnswers);
+	
+
 
 });
