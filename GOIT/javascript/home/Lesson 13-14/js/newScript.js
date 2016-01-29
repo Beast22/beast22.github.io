@@ -72,7 +72,7 @@ $(function(){
 				my_test.questions[index].answers.forEach(function(item, i){
 				if(elements[indexElement].checked)
 				{
-					$('.answered')[indexElement].style.color = "#000";
+					$('.answered')[indexElement].style.color = "black";
 					$('.answered')[indexElement].style.fontWeight = "bold";
 				}
 
