@@ -15,27 +15,20 @@
 				<% for(var item in questions){%>
 					<li class ="tmplList__item">
 						<h3><%= questions[item].title%></h3>
+						<p class="subtitle"><%=subtitle%></p>
 						<ul class = "secondList">
-							<% if(questions[item].oneAnser){%>
-								<% var count = 0%>
+							<% var number = 0%>
 								<% questions[item].answers.forEach(function(answer){%>
 									<li class = "secondList__item">
-										<label><input type = "radio" name = "<%= 'name'+nameForInput %>"><%= answer%></label>
+										<label><input type = "radio" name = "<%= 'name'+input %>"><%= answer%></label>
 									</li>
-									<% count++; if(count === 3){count = 0;nameForInput++;}%>
-								<%})%>
-							// <%}else{%>
-							// 	<% questions[item].answers.forEach(function(answer){%>
-							// 		<li class = "secondList__item">
-							// 			<label><input type = "checkbox"><%= answer%></label>
-							// 		</li>
-							// 	<%})%>
-							<%}%>	
+									<% number++; if(number === 3){number = 0; input++;}%>
+								<%})%>								
 						</ul>
 					</li>
 				<%}%>
 			</ol>
-			<button type = "button" id = "buttonOn" class="btn-info"><%=buttonOn%></button>
+			<button type = "button" id = "switchOn" class="btn-info"><%=switchOn%></button>
 		</form>
 	</script>
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>

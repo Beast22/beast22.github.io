@@ -18,8 +18,7 @@ $(function(){
 		            'это использование синтаксически некорректных CSS команд для старых браузеров',
 		            'это использование javascript внутри CSS'
 		        ],
-		        'check': 1,
-		        'oneAnser': true
+		        'correct': 1
 		    },
 		    '2': {
 		        'title': 'Что такое условные комментарии?',
@@ -28,8 +27,7 @@ $(function(){
 		            'это вставка кода на javascript для поддержания кроссбраузерности',
 		            'это специальна технология определения версии для IE'
 		        ],
-		        'check': 2,
-		        'oneAnser': true
+		        'correct': 2
 		    },
 		    '3': {
 		        'title': 'Какие подходы считаются лучшими с точки зрения качества?',
@@ -38,17 +36,17 @@ $(function(){
 		            'Graceful Degradation и Mobile First',
 		            'Progressive Enhancement и Mobile First'
 		        ],
-		        'check': 1,
-		        'oneAnser': true
+		        'correct': 1
 		    },
 
 		}
 
 		var tmp = {
 			textTitle: 'Тест по фронтенду',
+			subtitle: 'Выберите один вариант:',
 			questions,
-			nameForInput: 0,
-			buttonOn: 'Показать результаты'
+			input: 0,
+			switchOn: 'Показать результаты'
 		}
 		localStorage.setItem('questions', JSON.stringify(tmp))
 	}
@@ -57,7 +55,7 @@ $(function(){
 		return localStorage.getItem('questions');
 	}
 
-	$('#buttonOn').on('click', function(){
+	$('#switchOn').on('click', function(){
 		createModalform();
 		showResult();
 	})
@@ -76,13 +74,18 @@ $(function(){
 					$('.answered')[indexElement].style.fontWeight = "bold";
 				}
 
-				if(i === my_test.questions[index].check){
+				if(i === my_test.questions[index].correct){
 					if(elements[indexElement].checked)
 					{
 						$(".list__item")[index-1].style.background = "rgb(223,240,216)";
 						$('.answered')[indexElement].style.color = "#000";
 					}
 				}
+				
+				// if(elements.checked !== true) {
+				// $('.info').css({'display':'block'});
+
+				// }
 				indexElement++;
 				})
 
@@ -96,14 +99,16 @@ $(function(){
 		modal.append(container);
 		var list = $('<ol class = "list"></ol>');
 		container.append(list);
+		var info = $('<p class = "info">f;lkf;efkl;</p>'); 
+		container.append(info);
 		for(var index in my_test.questions)
 		{
 			var item = $('<li class = "list__item"></li>');
-			list.append(item);
 			var quest = $('<h4 class = "list__quest"></h4>');
+			var answer = $('<ul class = "list__answer"></ul>');
+			list.append(item);
 			item.append(quest);
 			quest.text(my_test.questions[index].title);
-			var answer = $('<ul class = "list__answer"></ul>');
 			item.append(answer);
 			my_test.questions[index].answers.forEach(function(item){
 					var answerItem = $('<li class = "answered"></li>');
@@ -111,7 +116,7 @@ $(function(){
 				answerItem.text(item);
 			})
 		}
-		var button = $('<input type = "submit" value = "OK" id = "buttonOff" class="btn btn-info">');
+		var button = $('<input type = "submit" value = "OK" id = "switchOff" class="btn btn-info">');
 		button.click(deleteModalform);
 		container.append(button);
 		$('body').append(modal);

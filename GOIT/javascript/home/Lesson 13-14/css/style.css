@@ -42,13 +42,19 @@ h1{
 	width: 765px;
 	margin: 0 auto;
 }
-#buttonOn, #buttonOff{
+.info{
+	text-align: center;
+	font-weight: bold;
+	display: none;
+}
+
+#switchOn, #switchOff{
 	padding: 0 5px;
 	height: 40px;
 	margin: 30px 0 30px 40%;
 }
 
-#buttonOff{
+#switchOff{
 	width: 100px;
 }
 
