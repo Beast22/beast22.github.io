@@ -7,11 +7,13 @@ $(function(){
  		if(results_field) {
  			keyUrl += results_field+"&rsz=8&start="+elem*8+"&callback=AddedCallback&context=?";
  			var pages;
- 			$.getJSON("ajax/keyUrl",
+ 			$.getJSON(keyUrl, {
+ 				format: "jsonp"
+ 			})
  			
- 			function(data){
- 				if(data.results.length){
- 					pages = data.cursor.pages.length;
+ 			.done(function(data){
+ 				// if(data.results.length){
+ 					// pages = data.cursor.pages.length;
 		 			$.each(data.results, function(i, val){
 		 				var ul = document.createElement("ul");
 		 				var li = document.createElement("li");
@@ -21,36 +23,45 @@ $(function(){
 		 				var textUrl = document.createElement("cite");
 		 				var textContent = document.createElement("p");
 
-		 				results_field.appendChild(ul);
+		 				ul.className = "response_list";
+		 				li.className = "response_list__unit";
+		 				title.className = "response_list__unit__name";
+		 				link.className = "response_list__unit__link";
+		 				textItem.className = "response_list__unit__text";
+		 				textUrl.className = "response_list__unit__text__url";
+		 				textContent.className = "response_list__unit__content";
+
 		 				ul.appendChild(li);
 		 				ul.appendChild(title);
 		 				ul.appendChild(textItem);
 		 				title.appendChild(link);
 		 				textItem.appendChild(textUrl);
 		 				textItem.appendChild(textContent);
+		 				$('.results_field').append(ul); 
 
 		 			});
-		 			var pagination = document.createElement("ol");
-		 			for (var i=1; i<=pages; i++){
-		 				var page = document.createElement("li");
-		 				var pageLink = document.createElement("a");
+		 			// var pagination = document.createElement("ol");
+		 			// for (var i=1; i<=pages; i++){
+		 			// 	var page = document.createElement("li");
+		 			// 	var pageLink = document.createElement("a");
 
-		 				pageLink.appendChild(pageLink);
-		 				pagination.appendChild(page);
+		 			// 	page.appendChild(pageLink);
+		 			// 	pagination.appendChild(page);
 
-		 				if(i === (elem+1)){
-		 					pageLink.className = "active_page";
-		 				}
+		 			// 	if(i === (elem+1)){
+		 			// 		pageLink.className = "active_page";
+		 			// 	}
 
-		 			}
+		 			// }
 
-		 		} else{
-		 			var oops = document.createElement("p");
-		 			oops.innerHTML = "Таких запросов в выдаче нет";
-		 			oops.className = "response-error";
-		 			results_field.appendChild(oops);
+		 		// } else{
+		 		// 	var oops = document.createElement("p");
+		 		// 	oops.innerHTML = "Таких запросов в выдаче нет";
+		 		// 	oops.className = "response-error";
+		 		// 	$('.results_field').append(oops); 
+		 			
 
-		 		}
+		 		// }
  			});
  		}
  	}
