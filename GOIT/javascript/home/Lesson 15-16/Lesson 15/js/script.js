@@ -7,7 +7,7 @@ $(function(){
  		if(results_field) {
  			keyUrl += results_field+"&rsz=8&start="+elem*8+"&callback=AddedCallback&context=?";
  			var pages;
- 			$.getJSON(keyUrl),
+ 			$.getJSON("ajax/keyUrl",
  			
  			function(data){
  				if(data.results.length){
@@ -51,7 +51,7 @@ $(function(){
 		 			results_field.appendChild(oops);
 
 		 		}
- 			}
+ 			});
  		}
  	}
 
