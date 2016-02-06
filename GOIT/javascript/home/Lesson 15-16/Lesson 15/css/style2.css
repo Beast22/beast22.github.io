@@ -1,0 +1,159 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+.ui{
+	display: flex;
+	flex-direction: row;
+	background-color: #f1f1f1;
+    border-bottom: 1px solid #666;
+    border-color: #e5e5e5;
+}
+
+.searchform {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+.logo {
+	
+	padding: 16px 20px 0 12px;
+}
+
+/*.logo__link {
+	display: block;
+	width:95px;
+	height:37px;
+	position: relative;
+	overflow: hidden;
+}*/
+
+/*.logo__image {
+	position: absolute;
+	left: 0;
+	top: -41px;
+}*/
+
+.for_search {
+	width: 590px;
+	height: 40px;
+	outline: 0;
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+.to_find {
+	float: left;
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	background-color: #4285f4;
+}
+
+.to_find:hover {
+	background-color: #3267C6;
+}
+
+.inside {
+	display: inline-block;
+	height: 24px;
+	width: 24px;
+	margin: 7px auto;
+	background: url(../img/logo.png) no-repeat -107px -55px;
+	color: transparent;
+}
+
+.results_field {
+	width: 80%;
+	padding: 20px 0; 
+	margin: 0 auto;
+	margin-left: 120px;
+}
+
+.response_list {
+	list-style: none;
+}
+
+.response_list__unit {
+	width: 500px;
+	margin-bottom: 20px;
+}
+
+.response_list__unit__name {
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.response_list__unit__link {
+	text-decoration: none;
+	color: #473DBB;
+	font-size: 18px;
+}
+
+.search-result__list__item__link:hover {
+	text-decoration: underline;
+}
+
+.response_list__unit__text__url {
+	font-style: normal;
+	color: #006621;
+}
+
+.response_list__unit__content {
+	line-height: 1.4;
+	word-wrap: break-wrap;
+	font-size: small;
+	color: #545454;
+}
+
+.no_doc {
+	font-size: 16px;
+	color: #222;
+}
+
+.search-result__pages{
+	list-style: none;
+}
+
+.search-result__pages__item {
+	float: left;
+	width: 20px;
+	text-align: center;
+}
+
+.search-result__pages__item__link {
+	text-decoration: none;
+	font-size: 13px;
+	color: #4285f4;
+	cursor: pointer;
+}
+
+.search-result__pages__item__link:hover {
+	text-decoration: underline;
+}
+
+.search-result__pages__item__link--current {
+	color: #555;
+	text-decoration: none;
+}
+
+.response_list__unit__text__url{
+	color: #006621;
+}
+
+.response_list__unit__content{
+	font-size: small;
+    color: #545454;
+}

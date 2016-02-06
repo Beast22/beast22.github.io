@@ -23,6 +23,7 @@ body {
 	border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
     border: 1px solid #ddd;
+    padding-left: 5px;
 }
 
 .to_find{
@@ -90,4 +91,9 @@ body {
 
 .response_list__unit__text{
 
+}
+
+.response_list__unit__text__url{
+	font-style: normal;
+    color: #006621;
 }
