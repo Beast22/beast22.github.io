@@ -1,0 +1,16 @@
+{
+  "name": "work-with-gulp",
+  "version": "1.0.0",
+  "description": "task on gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eugene Snakecatcher",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-minify-css": "^1.2.3"
+  }
+}
