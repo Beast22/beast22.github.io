@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lesson 9-10</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/carousel.css">
+	<link rel="stylesheet" href="css/cusel.css">
+
+
+</head>
+<body>
+	<nav class="navigation">
+		<ul class="menu">
+			<li><a href="#">Nav 1</a></li>
+			<li><a href="#">Nav 2</a></li>
+			<li class="dropdown"><a href="#">Nav 3 <i class="fa fa-caret-down"></i></a>
+				<ul class="submenu">
+					<li><a href="#">Nav 3.1</a></li>
+					<li><a href="#">Nav 3.2</a></li>
+					<li class="dropdown 2nd_level"><a href="#">Nav 3.3 <i class="fa fa-caret-right"></i></a>
+						<ul class="submenu subsecond">
+							<li><a href="#">Nav 3.31</a></li>
+							<li><a href="#">Nav 3.32</a></li>
+							<li><a href="#">Nav 3.33</a></li>
+							<li><a href="#">Nav 3.34</a></li>
+							<li><a href="#">Nav 3.35</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Nav 3.4</a></li>
+					<li><a href="#">Nav 3.5</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Nav 4</a></li>
+			<li><a href="#">Nav 5</a></li>
+		</ul>
+	</nav>
+
+			<h2 class="jcarousel-title">jCarousel image slider</h2>
+		<div class="jcarousel-wrapper">
+			<div class="jcarousel">
+				<ul>
+					<li><img src="img/image1.jpg" alt="image1"></li>
+					<li><img src="img/image2.jpg" alt="image2"></li>
+					<li><img src="img/image3.jpg" alt="image3"></li>
+					<li><img src="img/image4.jpg" alt="image4"></li>
+					<li><img src="img/image5.jpg" alt="image5"></li>
+					<li><img src="img/image6.jpg" alt="image6"></li>
+				</ul>
+			</div>
+			<a href="#" class="jcarousel-control-prev">‹</a>
+			<a href="#" class="jcarousel-control-next">›</a>
+			<p class="jcarousel-pagination"> 
+				<a href="#1">1</a>
+				<a href="#2">2</a>
+				<a href="#3">3</a>
+				<a href="#4">4</a>
+				<a href="#5">5</a>
+			</p>
+		</div>
+		
+			
+		<h2 class="jcusel-title">jcusel select</h2>	
+		<form action="#" class="form">
+			    <label id="your_conf" for="confession">Ваше вероисповедание:</label>
+				<select name="confession" id="confession">
+				<option value="1">Православный</option>
+				<option value="2">Католик</option>
+				<option value="3">Протестант</option>
+				<option value="4">Атеист</option>
+				<option value="5">Агностик</option>
+				<option value="6">Сатанист</option>
+				<option value="7">Не определился</option>
+				<option value="8">Пофигист</option>
+				</select>
+
+				<label id="your_sign" for="zodiac">Знак зодиака:</label>
+				<select name="zodiac" id="zodiac" >
+				<option value="1">Овен</option>
+				<option value="2">Телец</option>
+				<option value="3">Близнецы</option>
+				<option value="4">Рак</option>
+				<option value="5">Лев</option>
+				<option value="6">Дева</option>
+				<option value="7">Весы</option>
+				<option value="8">Скорпион</option>
+				<option value="9">Стрелец</option>
+				<option value="10">Козерог</option>
+				<option value="11">Водолей</option>
+				<option value="12">Рыбы</option>
+				</select>
+
+				<h2 class="checkbox-title">jquery and css checkboxes</h2>	
+				<div class="checkbox_set">
+					<fieldset class="jq_style">
+						<label for="1st_check">label 1</label>
+						<span class="niceCheck"><input type="checkbox" id="1st_check"></span>
+
+						<label for="2nd_check">label 2</label>
+						<span class="niceCheck"><input type="checkbox" id="2nd_check" checked="checked"></span>
+
+						<label for="3rd_check">label 3</label>
+						<span class="niceCheck"><input type="checkbox" id="3rd_check" disabled="disabled"></span>
+					</fieldset>
+			
+					<fieldset class="pure_css">
+						<input type="checkbox" id="first_input">
+						<label for="first_input">label 1</label>
+						
+						
+						<input type="checkbox" id="second_input">
+						<label for="second_input" id="checked">label 2</label>
+						
+
+						<input type="checkbox" id="third_input">
+						<label for="third_input">label 3</label>
+					</fieldset>
+				</div>
+				<button value="send">Отправить</button> 
+		</form>
+
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.color-2.1.2.min.js"></script>
+	<script src="js/jquery.jcarousel.js"></script>
+	<script src="js/cusel.js"></script>
+	<script src="js/jScrollPane.js"></script>
+	<script src="js/jquery.mousewheel.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/carousel.js"></script>
+</body>
+</html>
