@@ -57,6 +57,7 @@ function resetTimer(){
 	stop.removeEventListener("click", pauseTimer);
 	// location.reload();
 	var diffDate = new Date(0); 
+	date1 = new Date();
 	seconds = 0;
 	minutes = 0;
 	hours = 0;
