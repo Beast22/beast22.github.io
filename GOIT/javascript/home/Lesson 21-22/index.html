@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lesson 13-14 Frontend Test</title>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="src/css/style.css">
+</head>
+<body>
+
+	<script type = "text/template" id = "test">
+		<form action="" class = "form">
+			<h1><%= textTitle%></h1>
+			<ol class ="tmplList">
+				<% for(var item in questions){%>
+					<li class ="tmplList__item">
+						<h3><%= questions[item].title%></h3>
+						<p class="subtitle"><%=subtitle%></p>
+						<ul class = "secondList">
+							<% var number = 0%>
+								<% questions[item].answers.forEach(function(answer){%>
+									<li class = "secondList__item">
+										<label><input type = "radio" name = "<%= 'name'+input %>"><%= answer%></label>
+									</li>
+									<% number++; if(number === 3){number = 0; input++;}%>
+								<%})%>								
+						</ul>
+					</li>
+				<%}%>
+			</ol>
+			<button type = "button" id = "switchOn" class="btn-info"><%=switchOn%></button>
+		</form>
+	</script>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="src/js/lodash.js"></script>
+	<script src="dist/js/script.js"></script>
+</body>
+</html>
