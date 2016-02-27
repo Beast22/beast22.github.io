@@ -1,5 +1,5 @@
 'use strict'
-$(() =>{
+let app = $(() =>{
 
 	// let Template();
 

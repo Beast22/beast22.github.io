@@ -1,6 +1,6 @@
 'use strict';
 
-$(function () {
+window.app = $(function () {
 
 	// let Template();
 
