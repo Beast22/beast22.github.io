@@ -1,7 +1,9 @@
 'use strict'
-$(() =>{
+// $(() =>{
 
-	// let Template();
+	// Template();
+
+	let getObject = () => localStorage.getItem('questions');
 
 	let my_test = JSON.parse(getObject());
 	let tmpl = _.template($('#test').html());
@@ -48,18 +50,14 @@ $(() =>{
 			input: 0,
 			switchOn: 'Показать результаты'
 		}
-
 		localStorage.setItem('questions', JSON.stringify(tmp))
 	}
 
-	// let getObject = () => localStorage.getItem('questions');
+	// function getObject(){
+	// 	return localStorage.getItem('questions');
+	// }
 
-	function getObject(){
-		return localStorage.getItem('questions');
-	}
-
-
-	$('#switchOn').on('click', () => {
+	$('#switchOn').on('click', ()=> {
 		createModalform();
 		showResult();
 	})
@@ -114,7 +112,7 @@ $(() =>{
 			item.append(quest);
 			quest.text(my_test.questions[index].title);
 			item.append(answer);
-			my_test.questions[index].answers.forEach((item) => {
+			my_test.questions[index].answers.forEach(function(item){
 					let answerItem = $('<li class = "answered"></li>');
 				answer.append(answerItem);
 				answerItem.text(item);
@@ -130,5 +128,5 @@ $(() =>{
 		$("input").attr("checked", false);
 		$('.background').remove();
 	}
-});
+// });
 
