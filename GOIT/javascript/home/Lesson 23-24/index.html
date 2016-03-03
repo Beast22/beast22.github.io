@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Todo list</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src ="src/js/tmpl.js"></script>
+	<script data-main="src/js/script.js" src="src/js/require.js"></script>
+	<link rel="stylesheet" href="dist/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<script type="text/template" id="wrapper-template">
+	<h1 class="title">ToDo List</h1>
+	<div class="wrapper">
+		<div class="todo todo__titlepage">
+			<input type="text" class="todo__value" placeholder="write your task here">
+			<span class="todo__add">type here to add</span>
+		</div>
+		<div class="todo todo__page">
+			<ul class="todo__page__list"></ul>
+		</div>
+	</div>
+</script>
+
+<script type="text/template" id="list-template">
+	<% for(var i = 0; i < data.length; i++) {%>
+		<li><input type="text" class="todo__page__list__item" name="" value="<%= data[i] %>" readonly> 
+		<span data-value="<%= data[i] %>" class="fa fa-times-circle"></span>
+		<span data-edit="<%= data[i] %>" class="fa fa-edit"></span>
+		</input>
+		</li>
+	<% }; %>
+</script>
+
+</body>
+</html>
