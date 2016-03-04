@@ -22,10 +22,17 @@ function Model(data){
 		return self.data;
 	};
 
-	self.editItem = function(item){
-		var currentItem = $(item);
-		$(this).removeAttr('readonly');
-	}
+  	self.editItem = function (item, editedItem) {
+	    var index = self.data.indexOf(item);
+
+	    if (index === -1) {
+	      return;
+	    };
+
+	    self.data[index] = editedItem;
+
+	    return self.data
+ 	}
 }
 
 
@@ -39,7 +46,7 @@ function View(model){
 			input: $('.todo__value'),
 			addBtn: $('.todo__add'),
 			ListContainer: $('.todo__page__list'),
-			// inputItem: $('.todo__page__list__item'),
+			inputItem: $('.todo__page__list__item'),
 			editIcon: $('.fa-edit')
 		};
 
@@ -89,13 +96,17 @@ function Controller(model, view){
 	}	
 
 	function editItem(){
-		
+		var currentInput = view.elements.inputItem;
+		model.editItem(currentInput);
+		// model.editItem(editedItem) = view.elements.inputItem.attr('readonly', false);
+		view.renderList(model.data);
 		// $('.todo__page__list__item').attr('readonly', false);
 		// $('.todo__page__list__item').removeAttr('readonly');
+		// var currentInput = $(this).removeAttr('readonly');
 		// var item = $(this).attr('data-value');
 
-		model.editItem();
-		view.renderList(model.data);
+		// model.editItem();
+		// view.renderList(model.data);
 	}
 	
 }
