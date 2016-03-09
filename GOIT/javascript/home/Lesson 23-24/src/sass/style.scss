@@ -96,6 +96,7 @@
 .todo__page__elem{
 	padding-top: 15px;
 	width: 455px;
+	position: relative;
 
 
 	.todo__page__list__item{
@@ -105,6 +106,7 @@
 		border: none;
     	background: #ffffcc;
     	width: 312px;
+
 
     	 &:focus{
 			border: 2px solid #dede9e;
@@ -119,6 +121,13 @@
 	font-size: 25px !important;
 	color: #ccc;
 	cursor: pointer;
+	position: absolute;
+
+	&:hover{
+		font-size: 30px !important;
+		color: #9C9797;
+		transition: all .5s;
+	}
 }
 
 .fa-times-circle
@@ -128,8 +137,11 @@
 
 .todo__edit{
 	visibility: hidden;
+	top: 20px;
+	right: 1px;
 }
 
 .todo__delete{
-	
+	top: 20px;
+    right: 1px;
 }

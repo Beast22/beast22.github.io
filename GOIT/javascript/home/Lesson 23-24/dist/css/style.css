@@ -82,7 +82,8 @@
 
 .todo__page__elem {
   padding-top: 15px;
-  width: 455px; }
+  width: 455px;
+  position: relative; }
   .todo__page__elem .todo__page__list__item {
     font-family: 'Bradley-Hand-ITC-Bold', sans-serif !important;
     font-size: 26px;
@@ -97,11 +98,22 @@
 .fa {
   font-size: 25px !important;
   color: #ccc;
-  cursor: pointer; }
+  cursor: pointer;
+  position: absolute; }
+  .fa:hover {
+    font-size: 30px !important;
+    color: #9C9797;
+    transition: all .5s; }
 
 .fa-times-circle
 .fa-save {
   width: 20px; }
 
 .todo__edit {
-  visibility: hidden; }
+  visibility: hidden;
+  top: 20px;
+  right: 1px; }
+
+.todo__delete {
+  top: 20px;
+  right: 1px; }
