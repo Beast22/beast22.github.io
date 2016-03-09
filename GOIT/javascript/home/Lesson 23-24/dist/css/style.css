@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,500,700,900);
+@font-face {
+  font-family: "Bradley-Hand-ITC-Bold";
+  src: url("../fonts/Bradley-Hand-ITC-Bold/bradley_hand_itc_bold-webfont.eot"), url("../fonts/Bradley-Hand-ITC-Bold/bradley_hand_itc_bold-webfont.ttf"), url("../fonts/Bradley-Hand-ITC-Bold/bradley_hand_itc_bold-webfont.otf"), url("../fonts/Bradley-Hand-ITC-Bold/bradley_hand_itc_bold-webfont.woff");
+  font-style: normal;
+  font-weight: bold; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+.todo__title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  background: #f0f0f0;
+  width: 300px;
+  margin: 17px auto;
+  padding: 7px 0;
+  border: 1px solid #ccc; }
+
+.wrapper {
+  max-width: 1024px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+  .wrapper .todo {
+    width: 500px;
+    min-height: 500px;
+    text-align: center;
+    background: #ffffcc;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(186, 186, 186, 0.75); }
+  .wrapper .todo__titlepage {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .wrapper .todo__page {
+    margin-left: 65px; }
+
+.todo__add {
+  font-family: 'Bradley-Hand-ITC-Bold', sans-serif;
+  font-size: 32px;
+  color: #ccc;
+  cursor: pointer; }
+  .todo__add:hover {
+    color: #bfbfbf; }
+
+.todo__value {
+  font-family: 'Verdana', sans-serif;
+  width: 270px;
+  margin: 25px auto 10px;
+  line-height: 35px;
+  border: 1px solid #dede9e;
+  background: #ffffcc;
+  color: #bfbfbf;
+  padding-left: 5px;
+  font-size: 14px; }
+  .todo__value:focus {
+    background: #EEF2C2; }
+  .todo__value::-webkit-input-placeholder {
+    padding-left: 5px; }
+
+.todo__page__title {
+  font-family: 'Bradley-Hand-ITC-Bold', sans-serif;
+  font-size: 40px;
+  padding: 40px 0 15px 0; }
+
+.todo__page__list {
+  list-style: none;
+  padding-bottom: 15px; }
+
+.todo__page__elem {
+  padding-top: 15px;
+  width: 455px; }
+  .todo__page__elem .todo__page__list__item {
+    font-family: 'Bradley-Hand-ITC-Bold', sans-serif !important;
+    font-size: 26px;
+    line-height: 35px;
+    border: none;
+    background: #ffffcc;
+    width: 312px; }
+    .todo__page__elem .todo__page__list__item:focus {
+      border: 2px solid #dede9e;
+      outline: none; }
+
+.fa {
+  font-size: 25px !important;
+  color: #ccc;
+  cursor: pointer; }
+
+.fa-times-circle
+.fa-save {
+  width: 20px; }
+
+.todo__edit {
+  visibility: hidden; }
