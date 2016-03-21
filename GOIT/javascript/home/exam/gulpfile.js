@@ -6,6 +6,10 @@ var watch = require('gulp-watch');
 var concat = require('gulp-concat');
 var concatCss = require('gulp-concat-css');
 var imagemin = require('gulp-imagemin');
+var autoprefixer = require('gulp-autoprefixer');
+var merge = require('merge-stream');
+var order = require("gulp-order");
+
 
 gulp.task('sass', function() {
 
@@ -19,7 +23,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('concat-css', function(){
-	 return gulp.src('dist/css/*.css')
+	 return gulp.src('src/css/*.css')
     .pipe(concatCss("default.css"))
     .pipe(gulp.dest('dist/css/'));
 });
@@ -34,7 +38,8 @@ gulp.task('images', function() {
 
 
 gulp.task('watch', function() {
-	return gulp.watch('src/css/sass/*.scss', ['sass']);
+	gulp.watch('src/css/sass/*.scss', ['sass']);
+	gulp.watch('src/css/*.css', ['concat-css']);
 });
 
 gulp.task('default', ['sass', 'watch', 'concat-css']);

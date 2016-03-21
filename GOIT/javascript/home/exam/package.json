@@ -1,20 +1,25 @@
 {
-  "name": "22",
+  "name": "exam",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "gulpfile.js",
+  "dependencies": {
+    "streamqueue": "^1.1.1"
   },
-  "author": "Eugene Snakecatcher",
-  "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-concat": "^2.6.0",
     "gulp-concat-css": "^2.2.0",
     "gulp-imagemin": "^2.4.0",
+    "gulp-order": "^1.1.1",
     "gulp-sass": "^2.2.0",
-    "gulp-watch": "^4.3.5"
-  }
+    "gulp-watch": "^4.3.5",
+    "merge-stream": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eugene Snakecatcher",
+  "license": "ISC"
 }
