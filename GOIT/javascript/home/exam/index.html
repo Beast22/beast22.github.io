@@ -18,13 +18,13 @@
 			<section class="heading">
 				<h1 class="heading__set--title">Share your holiday dreams</h1>
 				<h2 class="heading__set--subtitle">And find the perfect partner to fullfill it</h2>
-				<a href="#partners" class="heading__set--button">Find your holiday partner</a>
+				<a href="#partners" class="block__button">Find your holiday partner</a>
 			</section>
 		</div>
 	</header>
 	<main class="main" role="main">
 		<div class="wrapper">
-			<section class="about__block">
+			<section class="about__block clearfix">
 				<h2 class="block__title">How Urlaubsglück works?</h2>
 				<div class="flexslider slider">
 				  <ul class="slides about__slider">
@@ -114,7 +114,7 @@
 				</div>
 			</section>
 
-			<section class="partners__block">
+			<section class="partners__block clearfix">
 				<h2 class="block__title block__title--partners">Meet a partner for your best holiday</h2>
 					<figure class="partner partner--first">
 					<a href="#" class="partner__link partner__link--first">
@@ -148,79 +148,63 @@
 					<p class="partner__data">Based in Chicago. I love playing tennis and loud music.</p>
 					</figure>
 
-				<button class="partners__block__link">See other partners</button>
+				<a class="block__button block__button--partners">See other partners</a>
 			</section>
 			<section class="activity__block">
-				<div class="activity__block__gallery">
-					<h3 class="activity__block__title">Discover holiday activity ideas</h3>
+				<div class="activity__block__gallery clearfix">
+					<h3 class="block__title block__title--activity">Discover holiday activity ideas</h3>
+					<div class="images-dest clearfix">
+						
+					</div>
 
-					<a href="" class="activity__item__link activity__item__link--sport">
-						<img src="" alt="" class="activity__item__img">
-						<h3 class="activity__item__title">Sport and Activity</h3>
+			<script type="text/html" id="_template" >
+					<% for ( var i = 0; i < data.length; i++ ) { %>
+					<a href="#" class="activity__link
+					<% if ((i==4)||(i==5)){%>activity__link--resize<%}%>" style="background: url(<%=data[i].url%>) no-repeat right center; background-size: cover;">
+						<h4 class="activity__title"><%=data[i].word%></h4>
 					</a>
+					<% } %>
+			</script>
 
-					<a href="" class="activity__item__link activity__item__link--health">
-						<img src="" alt="" class="activity__item__img">
-						<h3 class="activity__item__title">Wellnes and Health</h3>
-					</a>
-
-					<a href="" class="activity__item__link activity__item__link--extreme">
-						<img src="" alt="" class="activity__item__img">
-						<h3 class="activity__item__title">Extreme Sports and Expeditions</h3>
-					</a>
-
-					<a href="" class="activity__item__link activity__item__link--games">
-						<img src="" alt="" class="activity__item__img">
-						<h3 class="activity__item__title">Games</h3>
-					</a>
-
-					<a href="" class="activity__item__link activity__item__link--culture">
-						<img src="" alt="" class="activity__item__img">
-						<h3 class="activity__item__title">Culture and Education</h3>
-					</a>
-
-					<a href="" class="activity__item__link activity__item__link--relaxe">
-						<img src="" alt="" class="activity__item__img">
-						<h3 class="activity__item__title">Relaxation</h3>
-					</a>
-
-					<a href="" class="activity__item__link activity__item__link--travel">
-						<img src="" alt="" class="activity__item__img">
-						<h3 class="activity__item__title">Travelling</h3>
-					</a>
 				</div>
 				<div class="activity__block__form">
-					<h3 class="activity__block__title">Discover holiday activity ideas</h3>
-					<form action="" class="activity__form">
+					<h3 class="block__title block__title--activity">Discover holiday activity ideas</h3>
+					<form action="" class="activity-form clearfix" id="form-activity">
 						<p class="activity-form__info">Hi! What are your holiday interests?</p>
 						<input type="text" class="activity-form__input" placeholder="Enter your interests" required>
-						<button class="activity-form__button">Search partners</button>
+						<button class="block__button block__button--activity">Search partners</button>
 					</form>
 				</div>
 			</section>
 		</div>
 	</main>
 	<footer class="footer">
-		<div class="wrapper">
+		<div class="wrapper clearfix">
 			<h1 class="logo--footer"><a class="logo__link logo__link--footer" href="#">URLAUBSGLÜCK</a></h1>
-			<div class="footer__menu">
-				<h3 class="footer__menu__title">Company</h3>
-				<ul class="footer__menu__list">
+			<div class="menu">
+				<h3 class="footer__menu__title footer__menu__title--company">Company</h3>
+				<ul class="footer__menu__list clearfix">
 					<li class="footer__menu__item"><a href="#" class="footer__menu__link">About</a></li>
 					<li class="footer__menu__item"><a href="#" class="footer__menu__link">Contacts</a></li>
 					<li class="footer__menu__item"><a href="#" class="footer__menu__link">Press</a></li>
-					<li class="footer__menu__item"><a href="#" class="footer__menu__link">Blogs</a></li>
+					<li class="footer__menu__item"><a href="#" class="footer__menu__link">Blog</a></li>
 				</ul>
 			</div>
-			<h3 class="footer__menu__partners">Partners</h3>
-			<div class="footer__menu__author">
+			<div class="partners">
+				<h3 class="footer__menu__title footer__menu__title--partners">Partners</h3>
+			</div>
+			<div class="footer__copyright">
 				<span>designed by</span>
-				<a href="#" class="author__logo"></a>
+				<a href="#" class="footer__copyright__logo"></a>
 			</div>
 		</div>
-	</footer>
+	 </footer> 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="src/js/jquery.flexslider.js"></script>
+	<!--<script src="src/js/handlebars-v4.0.5.js"></script>-->
+	<script src="src/js/tmpl.js"></script>
+	<script src="src/js/isotope.pkgd.js"></script>
+	<script src="src/js/imagesloaded.pkgd.min.js"></script>
 	<script src="src/js/script.js"></script>
 </body>
 </html>
