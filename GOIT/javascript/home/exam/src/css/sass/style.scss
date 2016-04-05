@@ -33,9 +33,9 @@ $desktop: 960px;
 
 .logo{
 	position: absolute;
-	left: 50%;
-    transform: translateX(-50%);
     top: 173px;
+    text-align: center;
+    width: 100%;
 
     &--footer{
     	position: static;
@@ -45,6 +45,7 @@ $desktop: 960px;
 
 
 }
+
 .logo__link{
  	color: #fff;
 	font-family: 'Montserrat', sans-serif;
@@ -461,23 +462,18 @@ $desktop: 960px;
  .footer__menu{
 
 	&__list{
-		position: relative;
-		float: left;
-		left: 50%;
-		transform: translate(-50%);
-		padding-top: 5px;
-		width: 205px;
+	    padding-top: 5px;
+	    width: 205px;
+	    margin: 0 auto;
 	}
 
 	&__item{
 		float: left;
+		padding-right: 15px;
+		
 
-		&:not(:last-child) {
-			padding-right: 15px;
-		}
-
-		&:nth-child(1){
-			padding-left: 3px;
+		&:first-child + * + * + *{
+			padding-right: 0px;
 		}
 	}
 
@@ -529,14 +525,16 @@ $desktop: 960px;
 	}
 
 	.logo{
-		 position: static;
+	    position: static;
 	    float: left;
-	    padding: 4px 0 0 264px;
+	    padding: 4px 0 0 42px;
+	    text-align: start;
+	    width: auto;
 	}
 
 	.register{
 		float: right;
-    	padding-right: 26px;
+    	padding-right: 34px;
 
     	.register__button{
     		margin-top: -4px;
@@ -744,13 +742,17 @@ $desktop: 960px;
 
 		.activity-form__input{
 			display: inline-block;
-			width: 240px;
+		    width: 240px;
+		    float: left;
+		    margin: 10px 0 0 169px;
 		}
 	}
 	
 	.block__button--activity{
 		display: inline-block;
 		width: 160px;
+		float: left;
+    	margin-left: 8px;
 	}
 
 	/*------masonry------*/
@@ -783,8 +785,9 @@ $desktop: 960px;
 	}
 
 	.footer__menu__list{
-		left: 90%;
+		left: 40%;
 		padding-top: 14px;
+		position: relative;
 
 		.footer__menu__item{
 			float: none;
@@ -809,7 +812,7 @@ $desktop: 960px;
 	    float: right;
 
 	    &__logo{
-	    	margin: 4px 26px 0px 0;
+	    	margin: 4px 37px 0px 0;
 	    }
 
 	    span{
@@ -840,8 +843,8 @@ $desktop: 960px;
 		position: static;
    		width: auto;
     	float: left;
-    	padding-left: 19%;
-    	padding-top: 5%;
+	    padding-left: 3px;
+	    padding-top: 42px;
 	}
 
 	.register {
@@ -1098,7 +1101,8 @@ $desktop: 960px;
 	}
 
 	.footer__menu__list{
-		left: 97%;
+		position: relative;
+		left: 47%;
 		padding-top: 14px;
 
 		.footer__menu__item{

@@ -37,6 +37,12 @@ gulp.task('images', function() {
 });
 
 
+gulp.task('scripts', function() {
+	return gulp.src('src/js/*.*')
+	.pipe(concat('all.js'))
+	.pipe(gulp.dest('dist/js'));
+});
+
 gulp.task('watch', function() {
 	gulp.watch('src/css/sass/*.scss', ['sass']);
 	gulp.watch('src/css/*.css', ['concat-css']);
