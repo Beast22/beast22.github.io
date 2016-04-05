@@ -6,7 +6,11 @@
 	<title>URLAUBSGLÜCK</title>
 	<link rel="stylesheet" href="dist/css/style.css">
 	<link rel="stylesheet" href="dist/css/default.css">	
-</head>
+	<!-- 	[if gte IE 8]>
+        <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if IE 8]> <html class="ie8"> <![endif]-->
+</head> 
 <body>
 	<header class="header">
 		<div class="wrapper">
@@ -18,153 +22,154 @@
 			<section class="heading">
 				<h1 class="heading__set--title">Share your holiday dreams</h1>
 				<h2 class="heading__set--subtitle">And find the perfect partner to fullfill it</h2>
-				<a href="#partners" class="block__button">Find your holiday partner</a>
+				<a href="#partners" class="block__button block__button--heading">Find your holiday partner</a>
 			</section>
 		</div>
 	</header>
 	<main class="main" role="main">
 		<div class="wrapper">
 			<section class="about__block clearfix">
-				<h2 class="block__title">How Urlaubsglück works?</h2>
-				<div class="flexslider slider">
-				  <ul class="slides about__slider">
-				    <li class="about__item">
-				      <img class="about__img" src="dist/img/slider1.jpg" />
-				      	<div class="about__info">
-					      	<a class="about__info__button">step 1</a>
-							<h3 class="about__info__title">Sed leo enim, condimentum</h3>
-							<p class="about__info__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-						</div>
-				    </li>
-				    <li class="about__item">
-				      <img class="about__img" src="dist/img/slider2.jpg" />
-				      	<div class="about__info about__info--second">
-					      	<a class="about__info__button about__info__button--second">step 2</a>
-							<h3 class="about__info__title about__info__title--second">Morbi velit risus</h3>
-							<p class="about__info__text about__info__text--second">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
-						</div>
-				    </li>
-				    <li class="about__item">
-				      <img class="about__img" src="dist/img/slider3.jpg" />
-				      <div class="about__info about__info--third">
-					      	<a class="about__info__button about__info__button--third">step 3</a>
-							<h3 class="about__info__title about__info__title--third">Sed leo enim, condimentum</h3>
-							<p class="about__info__text about__info__text--third">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-						</div>
-				    </li>
-				  </ul>
-				</div>
+				<h2 class="block__title block__title--about">How Urlaubsglück works?</h2>
+				<div class="about__block__container clearfix">
+					<div class="flexslider slider">
+					  <ul class="slides about__slider">
+					    <li class="about__item">
+					      <img class="about__img" src="dist/img/slider1.jpg" />
+					      	<div class="about__info">
+						      	<a class="about__info__button">step 1</a>
+								<h3 class="about__info__title">Sed leo enim, condimentum</h3>
+								<p class="about__info__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+							</div>
+					    </li>
+					    <li class="about__item">
+					      <img class="about__img" src="dist/img/slider2.jpg" />
+					      	<div class="about__info about__info--second">
+						      	<a class="about__info__button about__info__button--second">step 2</a>
+								<h3 class="about__info__title about__info__title--second">Morbi velit risus</h3>
+								<p class="about__info__text about__info__text--second">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+							</div>
+					    </li>
+					    <li class="about__item">
+					      <img class="about__img" src="dist/img/slider3.jpg" />
+					      <div class="about__info about__info--third">
+						      	<a class="about__info__button about__info__button--third">step 3</a>
+								<h3 class="about__info__title about__info__title--third">Sed leo enim, condimentum</h3>
+								<p class="about__info__text about__info__text--third">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+							</div>
+					    </li>
+					  </ul>
+					</div>
 
-				<div class="flexslider slider">
-				  <ul class="slides about__slider">
-				    <li class="about__item">
-				      <img class="about__img" src="dist/img/slider2.jpg" />
-				      	<div class="about__info about__info--second">
-					      	<a class="about__info__button about__info__button--second">step 2</a>
-							<h3 class="about__info__title about__info__title--second">Morbi velit risus</h3>
-							<p class="about__info__text about__info__text--second">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
-						</div>
-				    </li>
-				    <li class="about__item">
-				      <img class="about__img" src="dist/img/slider1.jpg" />
-				      	<div class="about__info">
-					      	<a class="about__info__button">step 1</a>
-							<h3 class="about__info__title">Sed leo enim, condimentum</h3>
-							<p class="about__info__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-						</div>
-				    </li>
-				    <li class="about__item">
-				      <img class="about__img" src="dist/img/slider3.jpg" />
-				      <div class="about__info about__info--third">
-					      	<a class="about__info__button about__info__button--third">step 3</a>
-							<h3 class="about__info__title about__info__title--third">Sed leo enim, condimentum</h3>
-							<p class="about__info__text about__info__text--third">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-						</div>
-				    </li>
-				  </ul>
-				</div>
+					<div class="flexslider slider">
+					  <ul class="slides about__slider">
+					    <li class="about__item">
+					      <img class="about__img" src="dist/img/slider2.jpg" />
+					      	<div class="about__info about__info--second">
+						      	<a class="about__info__button about__info__button--second">step 2</a>
+								<h3 class="about__info__title about__info__title--second">Morbi velit risus</h3>
+								<p class="about__info__text about__info__text--second">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+							</div>
+					    </li>
+					    <li class="about__item">
+					      <img class="about__img" src="dist/img/slider1.jpg" />
+					      	<div class="about__info">
+						      	<a class="about__info__button">step 1</a>
+								<h3 class="about__info__title">Sed leo enim, condimentum</h3>
+								<p class="about__info__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+							</div>
+					    </li>
+					    <li class="about__item">
+					      <img class="about__img" src="dist/img/slider3.jpg" />
+					      <div class="about__info about__info--third">
+						      	<a class="about__info__button about__info__button--third">step 3</a>
+								<h3 class="about__info__title about__info__title--third">Sed leo enim, condimentum</h3>
+								<p class="about__info__text about__info__text--third">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+							</div>
+					    </li>
+					  </ul>
+					</div>
 
-				<div class="flexslider slider">
-				  <ul class="slides about__slider">
-				    <li class="about__item">
-				      <img class="about__img" src="dist/img/slider3.jpg" />
-				      <div class="about__info about__info--third">
-					      	<a class="about__info__button about__info__button--third">step 3</a>
-							<h3 class="about__info__title about__info__title--third">Sed leo enim, condimentum</h3>
-							<p class="about__info__text about__info__text--third">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-						</div>
-				    </li>
-				    <li class="about__item">
-				      <img class="about__img" src="dist/img/slider1.jpg" />
-				      	<div class="about__info">
-					      	<a class="about__info__button">step 1</a>
-							<h3 class="about__info__title">Sed leo enim, condimentum</h3>
-							<p class="about__info__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-						</div>
-				    </li>
-				    <li class="about__item">
-				      <img class="about__img" src="dist/img/slider2.jpg" />
-				      	<div class="about__info about__info--second">
-					      	<a class="about__info__button about__info__button--second">step 2</a>
-							<h3 class="about__info__title about__info__title--second">Morbi velit risus</h3>
-							<p class="about__info__text about__info__text--second">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
-						</div>
-				    </li>
-				  </ul>
-				</div>
+					<div class="flexslider slider">
+					  <ul class="slides about__slider">
+					    <li class="about__item">
+					      <img class="about__img" src="dist/img/slider3.jpg" />
+					      <div class="about__info about__info--third">
+						      	<a class="about__info__button about__info__button--third">step 3</a>
+								<h3 class="about__info__title about__info__title--third">Sed leo enim, condimentum</h3>
+								<p class="about__info__text about__info__text--third">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+							</div>
+					    </li>
+					    <li class="about__item">
+					      <img class="about__img" src="dist/img/slider1.jpg" />
+					      	<div class="about__info">
+						      	<a class="about__info__button">step 1</a>
+								<h3 class="about__info__title">Sed leo enim, condimentum</h3>
+								<p class="about__info__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+							</div>
+					    </li>
+					    <li class="about__item">
+					      <img class="about__img" src="dist/img/slider2.jpg" />
+					      	<div class="about__info about__info--second">
+						      	<a class="about__info__button about__info__button--second">step 2</a>
+								<h3 class="about__info__title about__info__title--second">Morbi velit risus</h3>
+								<p class="about__info__text about__info__text--second">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+							</div>
+					    </li>
+					  </ul>
+					</div>
+				</div>  <!-- end of about__block__container-->
 			</section>
 
 			<section class="partners__block clearfix">
 				<h2 class="block__title block__title--partners">Meet a partner for your best holiday</h2>
-					<figure class="partner partner--first">
-					<a href="#" class="partner__link partner__link--first">
-						<img src="dist/img/partner_1.jpg" alt="Bradley Hunter" class="partner__img">
-					</a>
-					<figcaption class="partner__name">Bradley Hunter</figcaption>
-					<p class="partner__data">Based in Chicago. I love playing tennis and loud music.</p>
-					</figure>
+					<div class="partners__block__container clearfix">
+						<figure class="partner partner--first">
+						<a href="#" class="partner__link partner__link--first">
+							<img src="dist/img/partner_1.jpg" alt="Bradley Hunter" class="partner__img">
+						</a>
+						<figcaption class="partner__name">Bradley Hunter</figcaption>
+						<p class="partner__data">Based in Chicago. I love playing tennis and loud music.</p>
+						</figure>
 
-					<figure class="partner partner--second">
-					<a href="#" class="partner__link partner__link--second">
-						<img src="dist/img/partner_2.jpg" alt="Lucas Marsha" class="partner__img">
-					</a>
-					<figcaption class="partner__name">Lucas Marsha</figcaption>
-					<p class="partner__data">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
-					</figure>
+						<figure class="partner partner--second">
+						<a href="#" class="partner__link partner__link--second">
+							<img src="dist/img/partner_2.jpg" alt="Lucas Marsha" class="partner__img">
+						</a>
+						<figcaption class="partner__name">Lucas Marsha</figcaption>
+						<p class="partner__data">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
+						</figure>
 
-					<figure class="partner partner--third">
-					<a href="#" class="partner__link partner__link--third">
-						<img src="dist/img/partner_3.jpg" alt="Heather Walker" class="partner__img">
-					</a>
-					<figcaption class="partner__name">Heather Walker</figcaption>
-					<p class="partner__data">I'm a happy person that loves cats and climbing on mountains.</p>
-					</figure>
+						<figure class="partner partner--third">
+						<a href="#" class="partner__link partner__link--third">
+							<img src="dist/img/partner_3.jpg" alt="Heather Walker" class="partner__img">
+						</a>
+						<figcaption class="partner__name">Heather Walker</figcaption>
+						<p class="partner__data">I'm a happy person that loves cats and climbing on mountains.</p>
+						</figure>
 
-					<figure class="partner partner--fourth">
-					<a href="#" class="partner__link partner__link--fourth">
-						<img src="dist/img/partner_4.jpg" alt="Bradley Hunter" class="partner__img">
-					</a>
-					<figcaption class="partner__name">Bradley Hunter</figcaption>
-					<p class="partner__data">Based in Chicago. I love playing tennis and loud music.</p>
-					</figure>
-
+						<figure class="partner partner--fourth">
+						<a href="#" class="partner__link partner__link--fourth">
+							<img src="dist/img/partner_4.jpg" alt="Bradley Hunter" class="partner__img">
+						</a>
+						<figcaption class="partner__name">Bradley Hunter</figcaption>
+						<p class="partner__data">Based in Chicago. I love playing tennis and loud music.</p>
+						</figure>
+					</div>
 				<a class="block__button block__button--partners">See other partners</a>
 			</section>
 			<section class="activity__block">
 				<div class="activity__block__gallery clearfix">
 					<h3 class="block__title block__title--activity">Discover holiday activity ideas</h3>
-					<div class="images-dest clearfix">
+					<div class="images-dest grid clearfix">
+						<div class="activity__img grid-item gutter-sizer"><span class="activity__text"></span></div>
+						<div class="activity__img grid-item"><span class="activity__text"></span></div>
+						<div class="activity__img grid-item"><span class="activity__text"></span></div>
+						<div class="activity__img grid-item"><span class="activity__text"></span></div>
+						<div class="activity__img grid-item w2"><span class="activity__text"></span></div>
+						<div class="activity__img grid-item w2"><span class="activity__text"></span></div>
+						<div class="activity__img grid-item"><span class="activity__text"></span></div>
 						
 					</div>
-
-			<script type="text/html" id="_template" >
-					<% for ( var i = 0; i < data.length; i++ ) { %>
-					<a href="#" class="activity__link
-					<% if ((i==4)||(i==5)){%>activity__link--resize<%}%>" style="background: url(<%=data[i].url%>) no-repeat right center; background-size: cover;">
-						<h4 class="activity__title"><%=data[i].word%></h4>
-					</a>
-					<% } %>
-			</script>
 
 				</div>
 				<div class="activity__block__form">
@@ -199,12 +204,10 @@
 			</div>
 		</div>
 	 </footer> 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<script src="src/js/jquery.flexslider.js"></script>
-	<!--<script src="src/js/handlebars-v4.0.5.js"></script>-->
-	<script src="src/js/tmpl.js"></script>
-	<script src="src/js/isotope.pkgd.js"></script>
-	<script src="src/js/imagesloaded.pkgd.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+	<script src="src/js/jquery.flexslider.js"></script>/
+	<script src="src/js/masonry.pkgd.min.js"></script>
 	<script src="src/js/script.js"></script>
+
 </body>
 </html>
