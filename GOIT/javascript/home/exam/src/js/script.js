@@ -10,6 +10,10 @@ $(window).load(function() {
   });
 });
 
+// $(function() {
+// alert ('jQuery подключен и весело работает!');
+// });
+
 /*------ajax------*/
 
 $(function() {
@@ -19,7 +23,7 @@ $(function() {
 			type: "GET",
 	        dataType: "json",
 	        cache: false,
-	        url: '//www.api.pixplorer.co.uk/image?word=' + queryImg + '&amount=7&size=m',
+	        url: 'http://api.pixplorer.co.uk/image?word=' + queryImg + '&amount=7&size=m',
 
 	        success: function(data){
 	        	for (i = 0; i <= (data.images.length - 1); i++){
