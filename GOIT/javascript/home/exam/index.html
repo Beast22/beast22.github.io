@@ -6,9 +6,15 @@
 	<title>URLAUBSGLÜCK</title>
 	<link rel="stylesheet" href="dist/css/style.css">
 	<link rel="stylesheet" href="dist/css/default.css">	
+	<script src="dist/js/vendor.min.js"></script>
     <!--[if lte IE 8]>
         <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/selectivizr/1.0.3b/selectivizr.min.js"></script>
+   	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
 </head> 
 <body>
 	<header class="header">
@@ -159,17 +165,7 @@
 			<section class="activity__block">
 				<div class="activity__block__gallery clearfix">
 					<h3 class="block__title block__title--activity">Discover holiday activity ideas</h3>
-					<div class="images-dest grid clearfix">
-						<div class="activity__img grid-item gutter-sizer"><span class="activity__text"></span></div>
-						<div class="activity__img grid-item"><span class="activity__text"></span></div>
-						<div class="activity__img grid-item"><span class="activity__text"></span></div>
-						<div class="activity__img grid-item"><span class="activity__text"></span></div>
-						<div class="activity__img grid-item w2"><span class="activity__text"></span></div>
-						<div class="activity__img grid-item w2"><span class="activity__text"></span></div>
-						<div class="activity__img grid-item"><span class="activity__text"></span></div>
-						
-					</div>
-
+					<div class="images-dest grid clearfix">	</div>
 				</div>
 				<div class="activity__block__form">
 					<h3 class="block__title block__title--activity">Discover holiday activity ideas</h3>
@@ -203,9 +199,20 @@
 			</div>
 		</div>
 	 </footer> 
-	 <script src="src/js/jquery-1.7.min.js"></script>
-	 <script src="dist/js/all.js"></script>
-	
+					<script type="text/html" id="_template">
+						<% for (var i = 0; i < data.length; i++) { %>
+							<a href="#" class="activity__img grid-item
+							<% if ( i === 0 ){ %>
+						      gutter-sizer
+						      <% } %>
+							<% if ((i===4)||(i===5)){ %>
+						      w2
+						      <% } %>" style = "background: url(<%= data[i].url %>); background-size: cover;">
+						      <span class="activity__text"><%= data[i].word %></span>
+							</a>
+							<% } %>
+					</script>
+		<script src="dist/js/main.min.js"></script>
 
 </body>
 </html>

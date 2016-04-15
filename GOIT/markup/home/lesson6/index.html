@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="libs/f-a/css/font-awesome.min.css">
+	 <link href="http://allfont.ru/allfont.css?fonts=lucida-sans-unicode" rel="stylesheet" type="text/css" />
 </head>
 <body>
 	<div class="wrapper">
@@ -52,14 +53,14 @@
 		<!-- SEARCH PANELS -->
 		<div class="search clearfix">
 			<div class="auto">
-				<h2 class="auto_title">Поиск по автомобилю</h2>
+				<h2 class="title title--auto">Поиск по автомобилю</h2>
 				<form action="#" class="auto_form clearfix">
 					<fieldset>
 					<legend class="wheels_legend">Диски:</legend>
 					<div class="wheels_select clearfix">
 					<div class="joiner">
-						<label for="make">Марка <span>авто:</span></label>
-						<select name="make" id="make">
+						<label for="make" class="subtitle">Марка <span>авто:</span></label>
+						<select name="make" id="make" class="select">
 							<option value=""></option>
 							<option value="1">марка1</option>
 							<option value="2">марка2</option>
@@ -68,10 +69,10 @@
 						</select>
 					</div>
 					<div class="joiner">
-						<label for="model">Модель
+						<label for="model" class="subtitle">Модель
 						<span>автомобиля:</span>
 						</label>
-						<select name="model" id="model">
+						<select name="model" id="model" class="select">
 							<option value=""></option>
 							<option value="1">модель1</option>
 							<option value="2">модель2</option>
@@ -80,10 +81,10 @@
 						</select>
 					</div>
 					<div class="joiner">
-						<label for="year">Год выпуска
+						<label for="year" class="subtitle">Год выпуска
 						<span>автомобиля:</span>
 						</label>
-						<select name="year" id="year">
+						<select name="year" id="year" class="select">
 							<option value=""></option>
 							<option value="1">год1</option>
 							<option value="2">год2</option>
@@ -92,8 +93,8 @@
 						</select>
 					</div>
 					<div class="joiner">
-						<label for="complete_set">Комплектация:</label>
-						<select name="complete_set" id="complete_set">
+						<label for="complete_set" class="subtitle">Комплектация:</label>
+						<select name="complete_set" id="complete_set" class="select">
 							<option value=""></option>
 							<option value="1">минимальная</option>
 							<option value="2">стандартная</option>
@@ -106,7 +107,7 @@
 					<legend class="tires_legend">Шины:</legend>
 					<div class="tires_select">
 						<label for="make2">Марка <span>авто:</span></label>
-						<select name="make2" id="make2">
+						<select name="make2" id="make2" class="select">
 							<option value=""></option>
 							<option value="1">марка1</option>
 							<option value="2">марка2</option>
@@ -116,7 +117,7 @@
 						<label for="model2">Модель
 						<span>автомобиля:</span>
 						</label>
-						<select name="model2" id="model2">
+						<select name="model2" id="model2" class="select">
 							<option value=""></option>
 							<option value="1">модель1</option>
 							<option value="2">модель2</option>
@@ -126,7 +127,7 @@
 						<label for="year2">Год выпуска
 						<span>автомобиля:</span>
 						</label>
-						<select name="year2" id="year2">
+						<select name="year2" id="year2" class="select">
 							<option value=""></option>
 							<option value="1">год1</option>
 							<option value="2">год2</option>
@@ -134,7 +135,7 @@
 							<option value="4">год4</option>
 						</select>
 						<label for="complete_set2">Комплектация:</label>
-						<select name="complete_set2" id="complete_set2">
+						<select name="complete_set2" id="complete_set2" class="select">
 							<option value=""></option>
 							<option value="1">минимальная</option>
 							<option value="2">стандартная</option>
@@ -142,24 +143,24 @@
 						</select>
 					</div><!-- end of tires_select -->
 					</fieldset>
-					<input type="button" id="submit_car" value="поиск...">
+					<input type="button" class="submit" value="поиск...">
 				</form>
 			</div><!-- end of auto-->
 			<div class="tires">
-	<!-- 			<h2 class="tires_title">поиск шин</h2>
+				<h2 class="title title--tires">поиск шин</h2>
 				<form action="#" class="tires_form">
 					<fieldset>
-					<div class="size_season">
+					<div class="size_season clearfix">
 						<div class="size">
-							<span>Размер</span>
-							<select name="size_search" id="size_search">
+							<span class="subtitle subtitle--size">Размер</span>
+							<select name="size_search" class="size_search select">
 								<option value="">145</option>
 								<option value="1">146</option>
 								<option value="2">147</option>
 								<option value="3">148</option>
 							</select>
 							<span class="size-separator">/</span>
-							<select name="size_search2" id="size_search2">
+							<select name="size_search2" class="size_search2 select">
 								<option value=""></option>
 								<option value="1">Размер1</option>
 								<option value="2">Размер2</option>
@@ -167,33 +168,42 @@
 							</select>
 						</div>
 						<div class="diametr">
-							<span>R</span>
-							<select name="diam_select" id="diam_select">
+							<span class="subtitle subtitle--r">R</span>
+							<select name="diam_select" class="diam_select select">
 								<option value="">12</option>
 								<option value="1">13</option>
 								<option value="2">14</option>
 								<option value="3">15</option>
 							</select>
 						</div>
-						<div class="season">
-							<span>Сезон</span>
-							<label for="summer"><input type="checkbox" id="summer">лето</label>
-							<label for="winter"><input type="checkbox" id="winter">зима</label>
-							<label for="all_season"><input type="checkbox" id="all_season">всесез</label>
+						<div class="season clearfix">
+							<span class="subtitle subtitle--season">Сезон</span>
+							<div class="check_labels">
+								<input type="checkbox" id="summer">
+								<label for="summer"><span></span>лето</label>
+							</div>
+							<div class="check_labels">
+								<input type="checkbox" id="winter">
+								<label for="winter"><span></span>зима</label>
+							</div>
+							<div class="check_labels">
+								<input type="checkbox" id="all_season">
+								<label for="all_season"><span></span>всесез</label>
+							</div>
 						</div>
 					</div>
 					</fieldset>
-					<input type="button" class="submit_tires" value="поиск">
-				</form> -->
+					<input type="button" class="submit submit--tires" value="поиск...">
+				</form>
 			</div><!-- end of tires-->
 			<div class="wheels">
-				<!-- <form action="#" class="wheels_form">
+				<form action="#" class="wheels_form">
 					<fieldset>
-					<h2 class="wheels_title">Поиск дисков</h2>
+					<h2 class="title title--wheels">поиск дисков</h2>
 					<div class="wheels_search">
 						<div class="wheel_diam">
-							<span>Диаметр</span><span>диска:</span>
-							<select name="diam_wheel" id="diam_wheel">
+							<span>Диаметр диска:</span>
+							<select name="diam_wheel" class="diam_wheel select">
 								<option value="">14</option>
 								<option value="1">15</option>
 								<option value="2">16</option>
@@ -201,8 +211,17 @@
 							</select>
 						</div>
 						<div class="holes_quont">
-							<span>Количество</span><span>крепежных отверстий:</span>
-							<select name="holes" id="holes">
+							<span>Количество крепежных отверстий:</span>
+							<select name="holes" clsss="holes select">
+								<option value="">3</option>
+								<option value="1">4</option>
+								<option value="2">5</option>
+								<option value="3">6</option>
+							</select>
+						</div>
+						<div class="holes_diam">
+							<span>Количество крепежных отверстий:</span>
+							<select name="holes" clsss="holes select">
 								<option value="">3</option>
 								<option value="1">4</option>
 								<option value="2">5</option>
@@ -214,7 +233,7 @@
 					<fieldset>
 					<div class="wheels_right">
 						<span>ДЦО</span><span>(диаметр центрального отверствия):</span>
-							<select name="с_hole" id="с_hole">
+							<select name="с_hole" class="с_hole select">
 								<option value="">12</option>
 								<option value="1">13</option>
 								<option value="2">14</option>
@@ -223,7 +242,7 @@
 					</div>
 					<div class="eng_out">
 						<span>ЕТ</span><span>(вылет диска):</span>
-							<select name="engine_out" id="engine_out">
+							<select name="engine_out" class="engine_out select">
 								<option value="">12</option>
 								<option value="1">13</option>
 								<option value="2">14</option>
@@ -232,7 +251,7 @@
 					</div>
 					</fieldset>
 					<input type="button" class="submit_wheels">
-				</form> -->
+				</form>
 			</div>
 		</div><!--end of search SEARCH PANELS  -->
 

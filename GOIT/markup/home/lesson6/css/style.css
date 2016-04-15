@@ -68,15 +68,6 @@
 	margin: 4px 0 0 0;
 }
 
-.login,.pass::-webkit-input-placeholder{
-	text-indent: 5px;
-}
-.login,.pass::-moz-input-placeholder{
-	text-indent: 5px;
-}
-.login,.pass::-ms-input-placeholder{
-	text-indent: 5px;
-}
 
 /*Ставим слева чебурашку*/
 
@@ -99,10 +90,6 @@
 	cursor: pointer;
 }
 
-/*.sign_up span{
-	color: #fff;
-	font-size: 12px;
-}*/
 
 .sign_up .enter{
 	width: 38px;
@@ -325,7 +312,7 @@
 	margin-right: 27px;
 }
 
-.auto_title{
+.title{
 	font-family: Arial, sans-serif;
 	font-size: 12px;
 	line-height: 11px;
@@ -373,7 +360,7 @@ position: relative;
 top: 4px;
 }
 
-#submit_car{
+.submit{
 	border: none;
 	background: none;
 	font-family: Arial, sans-serif;
@@ -387,7 +374,7 @@ top: 4px;
 	cursor: pointer;
 }
 
-#submit_car:hover{
+.submit:hover{
 	text-decoration: none;
 }
 
@@ -425,6 +412,129 @@ top: 4px;
 .auto #year,#year2{
 	width: 55px;
 }
+
+/*--------2 panel - TIRES--------*/
+
+.title--tires{
+	text-align: start;
+	padding-left: 8px;
+}
+
+.size_season{
+	padding: 6px 0 0 0;
+}
+
+.subtitle{
+	display: inline-block;
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+    color: #000;
+    line-height: 10px;
+}
+
+.size-separator{
+	font-size: 10px;
+    font-family: Arial, sans-serif;
+    color: #000;
+    padding-left: 2px;
+}
+
+.select{
+	height: 17px;
+    background-color: #fff;
+    -webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,.75);
+    -moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,.75);
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,.75);
+    border: none;
+    display: inline-block;
+}
+
+.size {
+    padding-left: 12px;
+}
+
+.subtitle--size{
+	padding: 6px 6px 0 0;
+    display: inline-block;
+}
+
+.size_search{
+	width: 50px;
+}
+
+.size_search2 {
+    width: 57px;
+}
+
+.diametr {
+    padding: 6px 0 0 43px;
+}
+
+.season {
+    padding: 4px 0 0 0;
+}
+
+.diam_select{
+	width: 52px;
+    margin-left: 2px;
+}
+
+.subtitle--r{
+	padding-left: 2px;
+}
+
+.check_labels{
+	float: left;
+}
+
+.subtitle--season {
+    margin: 3px 11px 41px 12px;
+    float: left;
+    display: inline-block;
+}
+
+.check_labels {
+    float: left;
+    width: 90px;
+    padding: 0px 0 0 3px;
+}
+
+.check_labels input{
+	display:none;
+}
+
+.check_labels input + label span{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
+	background-color: #fff;
+	box-shadow: inset 1px 1px 1px rgba(0,0,0,.75);
+	margin-right: 3px;
+
+}
+
+.check_labels input[type="checkbox"]:checked + label span{
+	background:url(../img/check.png) center center  no-repeat;
+}
+
+.check_labels input + label{
+	font-size: 12px;
+	color: #000;
+	font-family: 'Lucida Sans Unicode', arial;
+	padding-left: 2px;
+}
+
+.submit--tires{
+	top: 88%;
+    right: 8%;
+}
+
+.title--wheels{
+	text-align: start;
+	padding-left: 8px;
+}
+
 
 /*--------CONTENT--------*/
 .content{
