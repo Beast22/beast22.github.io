@@ -55,6 +55,7 @@
     border: 2px solid transparent;
     -webkit-border-radius: 20px;
     border-radius: 20px;
+    behavior: url(border-radius.htc);
     position: relative; }
   .register__button--login {
     left: -13px; }
@@ -94,6 +95,7 @@
   background-color: #ff4e50;
   -webkit-border-radius: 25px;
   border-radius: 25px;
+  behavior: url(border-radius.htc);
   padding: 12px 0;
   cursor: pointer;
   -webkit-transition: all .5s;
@@ -124,7 +126,8 @@
 .flexslider .slides img {
   height: 240px !important;
   -webkit-border-radius: 6px;
-  border-radius: 6px; }
+  border-radius: 6px;
+  behavior: url(border-radius.htc); }
 
 .about__info {
   position: absolute;
@@ -140,6 +143,7 @@
     background: #ff4e50;
     -webkit-border-radius: 15px;
     border-radius: 15px;
+    behavior: url(border-radius.htc);
     padding: 4px 12px;
     text-align: center;
     width: 45px; }
@@ -225,6 +229,7 @@
       height: 33px;
       -webkit-border-radius: 50%;
       border-radius: 50%;
+      behavior: url(border-radius.htc);
       border: 4px solid #fff;
       background: url("../img/partners_iconset.png") 0px 0px no-repeat;
       overflow: hidden;
@@ -239,7 +244,8 @@
       background-color: #4e73db; }
   .partner__img {
     -webkit-border-radius: 50%;
-    border-radius: 50%; }
+    border-radius: 50%;
+    behavior: url(border-radius.htc); }
   .partner__name {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -278,6 +284,7 @@
     margin: 5px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
+    behavior: url(border-radius.htc);
     text-align: center;
     float: left; }
   .images-dest .activity__text {

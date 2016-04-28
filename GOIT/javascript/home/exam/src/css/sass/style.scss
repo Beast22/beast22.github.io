@@ -73,6 +73,7 @@ $desktop: 960px;
 		padding: 8px 15px;
 		border: 2px solid transparent;
 		border-radius: 20px;
+		behavior: url(border-radius.htc);
 		position: relative;
 	}
 
@@ -124,6 +125,7 @@ $desktop: 960px;
 	    margin: 18px auto;
 	    background-color: #ff4e50;
 	    border-radius: 25px;
+	    behavior: url(border-radius.htc);
 	    padding: 12px 0;
 	    cursor: pointer;
 	    transition: all .5s;
@@ -162,6 +164,7 @@ $desktop: 960px;
 .flexslider .slides img {
     height: 240px !important;
     border-radius: 6px;
+    behavior: url(border-radius.htc);
 }
 
 .about__info{
@@ -178,6 +181,7 @@ $desktop: 960px;
 	    color: #fff;
 	    background: #ff4e50;
 	    border-radius: 15px;
+	    behavior: url(border-radius.htc);
 	    padding: 4px 12px;
 	    text-align: center;
 	    width: 45px;
@@ -297,6 +301,7 @@ $desktop: 960px;
 			width: 33px;
 			height: 33px;
 			border-radius: 50%;
+			behavior: url(border-radius.htc);
 			border: 4px solid #fff;
 			background: url('../img/partners_iconset.png') 0px 0px no-repeat;
 			overflow: hidden;
@@ -322,6 +327,7 @@ $desktop: 960px;
 
 	&__img {
 		border-radius: 50%;
+		behavior: url(border-radius.htc);
 	}
 
 	&__name{
@@ -371,6 +377,7 @@ $desktop: 960px;
 		height: 120px;
 		margin: 5px;
 		border-radius: 3px;
+		behavior: url(border-radius.htc);
 		text-align: center;
 		float: left;
 	}
