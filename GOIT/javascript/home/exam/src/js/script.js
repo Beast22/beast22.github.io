@@ -38,7 +38,7 @@ $(window).load(function() {
 
 	function sendRequest(query) {
 		var word = encodeURIComponent(query);
-		var url = 'https://api.pixplorer.co.uk/image?word=' + word + '&amount=7&size=s';
+		var url = 'http://api.pixplorer.co.uk/image?word=' + word + '&amount=7&size=s';
 
 		$.ajax({
 				type: "GET",
